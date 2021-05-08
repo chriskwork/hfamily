@@ -1,0 +1,34 @@
+// for dark mode later (maybe)
+:root {
+  --button: #ff7777;
+  --header: #545668;
+  --text: #a8abbb;
+}
+
+// variables
+
+// colors
+$bg-gray: #ebebeb;
+$white: #fff;
+// numbers
+$max-width: 1200px;
+$padding: 20px;
+
+/*-------
+reset
+-------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/*---------
+common
+---------*/
+html {
+  font-size: 62.5%;
+}
