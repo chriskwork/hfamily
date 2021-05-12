@@ -1,0 +1,120 @@
+/*################
+section one
+################*/
+
+.section-one {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    // border: $border;
+    margin: 10rem auto 15rem auto;
+    gap: 5rem;
+
+    &-item {
+      text-align: center;
+      // border: $border;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
+
+      .grid-img-box {
+        height: 5rem;
+
+        svg {
+          width: auto;
+          height: 4rem;
+          fill: var(--text);
+          transition: fill $time;
+        }
+      }
+
+      &:hover .grid-img-box svg {
+        fill: var(--header);
+      }
+    }
+  }
+}
+
+/*################
+section two
+################*/
+
+.section-two {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rem;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  img {
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    width: 90%;
+    max-width: $max-width;
+
+    &-item {
+      text-align: center;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+/*################
+section three
+################*/
+
+.section-three {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    width: 90%;
+    max-width: $max-width;
+    margin-bottom: 15rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .content-text p {
+      margin-bottom: 3rem;
+    }
+
+    .content-image {
+      width: auto;
+      height: 20rem;
+      margin-left: 5rem;
+      opacity: 0.8;
+    }
+  }
+}
