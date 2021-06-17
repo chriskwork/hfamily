@@ -4,16 +4,26 @@
   "description": "happy family cultural center web page",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "postcss src/css/styles.css -o css/styles.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chriskwork/hfamily.git"
   },
-  "author": "Yohan",
+  "author": "Yohan Kim",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chriskwork/hfamily/issues"
   },
-  "homepage": "https://github.com/chriskwork/hfamily#readme"
+  "homepage": "https://github.com/chriskwork/hfamily#readme",
+  "keywords": [],
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.1.4"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.3.1"
+  }
 }
