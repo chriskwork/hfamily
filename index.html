@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr" class="bg-gray-50">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,10 +7,21 @@
     <title>사단법인 행복한가정문화원</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="bg-gray-100 text-gray-600 text-center">
+  <body class="text-gray-600 text-center">
+    <!--##################
+      HEADER
+    ######################-->
     <header
       id="header"
-      class="flex justify-center items-center px-4 container mx-auto"
+      class="
+        flex
+        justify-center
+        items-center
+        px-4
+        container
+        mx-auto
+        max-w-screen-xl
+      "
     >
       <nav class="flex justify-between items-center w-full h-20">
         <a href="/"
@@ -20,7 +31,7 @@
             src="./imgs/hfam-logo.png"
             alt="행복한가정문화원 로고"
         /></a>
-        <div id="nav-desktop" class="hidden md:block">
+        <div id="nav-desktop" class="hidden lg:block">
           <a href="#" class="hover:text-primary">문화원 소개</a>
           <a href="#" class="ml-6 hover:text-primary">도서출판 행복</a>
           <a href="#" class="ml-6 hover:text-primary">평생교육원</a>
@@ -30,7 +41,7 @@
           id="nav-mobile"
           src="./imgs/header/menu.svg"
           alt="mobile hamberger menu"
-          class="cursor-pointer w-7 md:hidden"
+          class="cursor-pointer w-7 lg:hidden"
         />
       </nav>
     </header>
@@ -45,7 +56,11 @@
         flex flex-col
         justify-center
         items-center
-        py-10
+        pt-10
+        pb-32
+        max-w-screen-xl
+        lg:flex-row-reverse
+        lg:pt-20
       "
     >
       <img
@@ -53,11 +68,11 @@
         alt="Family illustration"
         class="max-w-lg"
       />
-      <div class="intro-text">
+      <div class="intro-text lg:text-left">
         <p class="text-4xl mb-4 font-bold leading-snug">
           소중한 가정을 <br />아름답게 꽃피우는 정원사
         </p>
-        <p class="text-gray-400 px-7 text-sm">
+        <p class="text-gray-400 px-7 text-sm lg:px-0 lg:pr-12">
           사단법인 행복한가정문화원은 사회를 구성하는 기본 단위인 가정이
           행복해야 사회가 행복해진다는 철학을 가지고 행복한 가정, 행복한 사회를
           만들기 위해 1999년에 설립된 기관입니다.
@@ -80,5 +95,177 @@
         >
       </div>
     </div>
+
+    <!--##################
+      MAIN
+    ######################-->
+    <main>
+      <!--%%%%%%%%%%%%%%%
+      What we do section  -->
+      <section class="pb-24 container mx-auto max-w-screen-xl">
+        <div class="section-title flex items-center justify-center mb-8">
+          <div class="w-10 h-px bg-gray-300"></div>
+          <h1 class="font-bold text-xl mx-6">우리 문화원이 하는 일</h1>
+          <div class="w-10 h-px bg-gray-300"></div>
+        </div>
+
+        <!-- grid part -->
+        <div class="px-4 grid grid-cols-1 gap-2 md:grid-cols-3">
+          <div
+            class="
+              flex flex-col
+              justify-center
+              items-center
+              bg-white
+              p-8
+              rounded-md
+              shadow-sm
+            "
+          >
+            <img
+              src="./imgs/landing/icons/auto_stories_black_24dp.svg"
+              alt="책 아이콘"
+              class="w-12 mb-4"
+            />
+            <h3 class="mb-2 text-lg font-bold">문서 선교/출판</h3>
+            <p class="text-gray-400">
+              크리스천 잡지 월간 '행복한가정'을 발행하여 가정의 소중함을 알리고
+              있습니다.
+            </p>
+          </div>
+
+          <div
+            class="
+              flex flex-col
+              justify-center
+              items-center
+              bg-white
+              p-8
+              rounded-md
+              shadow-sm
+            "
+          >
+            <img
+              src="./imgs/landing/icons/school_black_24dp.svg"
+              alt="평생교육원 아이콘"
+              class="w-12 mb-4"
+            />
+            <h3 class="mb-2 text-lg font-bold">평생교육원</h3>
+            <p class="text-gray-400">
+              크리스천 잡지 월간 '행복한가정'을 발행하여 가정의 소중함을 알리고
+              있습니다.
+            </p>
+          </div>
+
+          <div
+            class="
+              flex flex-col
+              justify-center
+              items-center
+              bg-white
+              p-8
+              rounded-md
+              shadow-sm
+            "
+          >
+            <img
+              src="./imgs/landing/icons/sentiment_satisfied_black_24dp.svg"
+              alt="스마일 아이콘"
+              class="w-12 mb-4"
+            />
+            <h3 class="mb-2 text-lg font-bold">가정 상담</h3>
+            <p class="text-gray-400">
+              크리스천 잡지 월간 '행복한가정'을 발행하여 가정의 소중함을 알리고
+              있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- %%%%%%%%%%%%%%%%%
+        jibu section -->
+      <section class="pb-24 container mx-auto max-w-screen-xl">
+        <div class="section-title flex items-center justify-center mb-8">
+          <div class="w-10 h-px bg-gray-300"></div>
+          <h1 class="font-bold text-xl mx-6">지부 모집 안내</h1>
+          <div class="w-10 h-px bg-gray-300"></div>
+        </div>
+
+        <!-- jibu content -->
+        <div
+          class="
+            flex flex-col
+            justify-center
+            items-center
+            lg:flex-row
+            lg:text-left
+          "
+        >
+          <div>
+            <img
+              src="./imgs/landing/jibu-place.svg"
+              alt="지부 모집 이미지"
+              class="mb-6 max-w-screen-sm lg:mr-4"
+            />
+          </div>
+          <p class="text-gray-400">
+            사단법인 행복한가정문화원은 행복한 가정을 위한 평생교육의 전국적인
+            네트워크를 구축하고자 합니다. <br />상담에 뜻이 있는 지부와 함께
+            행복한 가정문화를 만들어가고자 하오니 많은 참여 바랍니다.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!--##################
+      FOOTER
+    ######################-->
+    <footer class="bg-gray-700 text-gray-300 px-4 py-8 lg:h-40">
+      <!-- content wrapper -->
+      <div
+        class="
+          container
+          mx-auto
+          max-w-screen-xl
+          h-full
+          lg:flex
+          justify-between
+          items-center
+        "
+      >
+        <div class="flex justify-center items-center mb-2">
+          <img
+            class="w-10 mr-2"
+            src="./imgs/hfam-logo.png"
+            alt="문화원 로고 이미지"
+          />
+          <p class="font-bold">사단법인 행복한가정문화원&nbsp;</p>
+          <p class="text-sm">&copy; 1999-<span id="year">2021</span></p>
+        </div>
+
+        <div class="text-xs mb-4">
+          07040 서울시 동작구 상도로 398 가나빌딩 3층
+          <br />전화: 02)825-0675, 팩스: 070)4712-6884 <br />메일:
+          j21family@hanmail.net
+        </div>
+
+        <div id="social" class="flex justify-center items-center">
+          <a href="#">
+            <img
+              src="./imgs/social-icon/facebook_black_24dp.svg"
+              alt="페이스북 아이콘"
+              class="w-8 mx-2"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./imgs/social-icon/bandLogo.png"
+              alt="밴드 아이콘"
+              class="w-6 mx-2"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
