@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr" class="bg-gray-50">
+<html lang="kr" class="bg-gray-50 text-gray-600 text-center">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +7,7 @@
     <title>사단법인 행복한가정문화원</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="text-gray-600 text-center">
+  <body class="">
     <!--##################
       HEADER
     ######################-->
@@ -21,10 +21,13 @@
         container
         mx-auto
         max-w-screen-xl
+        sticky
+        top-0
+        bg-gray-50
       "
     >
       <nav class="flex justify-between items-center w-full h-20">
-        <a href="/"
+        <a href="./index.html"
           ><img
             id="logo"
             class="w-12"
@@ -32,7 +35,9 @@
             alt="행복한가정문화원 로고"
         /></a>
         <div id="nav-desktop" class="hidden lg:block">
-          <a href="#" class="hover:text-primary">문화원 소개</a>
+          <a href="./src/pages/about.html" class="hover:text-primary"
+            >문화원 소개</a
+          >
           <a href="#" class="ml-6 hover:text-primary">도서출판 행복</a>
           <a href="#" class="ml-6 hover:text-primary">평생교육원</a>
           <a href="#" class="ml-6 hover:text-primary">문의</a>
@@ -79,7 +84,7 @@
         </p>
         <br /><br /><br />
         <a
-          href="#"
+          href="./src/pages/about.html"
           class="
             btn-primary
             bg-primary
@@ -212,6 +217,8 @@
             사단법인 행복한가정문화원은 행복한 가정을 위한 평생교육의 전국적인
             네트워크를 구축하고자 합니다. <br />상담에 뜻이 있는 지부와 함께
             행복한 가정문화를 만들어가고자 하오니 많은 참여 바랍니다.
+            <br /><br />
+            <a href="#" class="text-sm hover:text-primary">자세히 보기</a>
           </p>
         </div>
       </section>
