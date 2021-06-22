@@ -1,6 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* about.html */
 #about-banner {
-  background-image: url(../imgs/about/about-bg.jpg);
+  background-image: url(../imgs/about/about.jpg);
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
+}
+
+/* publishing.html */
+#publishing-banner {
+  background-image: url(../imgs/books/books.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#books-see-all:hover {
+  color: #ff7777;
+}
+
+#books-see-all:hover svg {
+  fill: #ff7777;
+}
+
+.portfolio-category-btn {
+  transition: background-color 150ms;
+}
+
+.portfolio-category-btn:hover {
+  background-color: #fee2e2;
+}
+
+.portfolio-category-btn.active {
+  background-color: #ff7777;
+  color: white;
 }

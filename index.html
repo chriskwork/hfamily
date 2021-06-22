@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>사단법인 행복한가정문화원</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="./src/js/main.js"></script>
   </head>
-  <body class="">
+  <body class="relative overflow-x-hidden">
     <!--##################
       HEADER
     ######################-->
@@ -38,16 +39,81 @@
           <a href="./src/pages/about.html" class="hover:text-primary"
             >문화원 소개</a
           >
-          <a href="#" class="ml-6 hover:text-primary">도서출판 행복</a>
-          <a href="#" class="ml-6 hover:text-primary">평생교육원</a>
-          <a href="#" class="ml-6 hover:text-primary">문의</a>
+          <a href="./src/pages/publishing.html" class="ml-6 hover:text-primary"
+            >도서출판 행복</a
+          >
+          <a href="./src/pages/happy-edu.html" class="ml-6 hover:text-primary"
+            >평생교육원</a
+          >
+          <a href="./src/pages/contact.html" class="ml-6 hover:text-primary"
+            >문의</a
+          >
         </div>
         <img
-          id="nav-mobile"
+          id="mobile-nav-open"
           src="./imgs/header/menu.svg"
           alt="mobile hamberger menu"
           class="cursor-pointer w-7 lg:hidden"
         />
+
+        <!-- mobile nav drawer -->
+        <!--when mobile menu opened, black background shows up-->
+        <div
+          id="black-cover"
+          class="
+            absolute
+            top-0
+            left-0
+            bg-black
+            opacity-70
+            w-screen
+            h-screen
+            hidden
+          "
+        ></div>
+        <div
+          id="nav-mobile"
+          class="
+            absolute
+            right-0
+            top-0
+            z-50
+            transform
+            translate-x-full
+            transition-transform
+            lg:hidden
+          "
+        >
+          <div
+            class="
+              relative
+              flex flex-col
+              justify-start
+              items-center
+              bg-white
+              w-80
+              h-screen
+              pt-20
+              shadow-lg
+              md:w-96
+            "
+          >
+            <img
+              id="mobile-nav-close"
+              src="./imgs/header/close.svg"
+              alt="닫기 버튼"
+              class="absolute top-8 right-8 cursor-pointer"
+            />
+            <a href="./src/pages/about.html" class="w-full py-8">문화원 소개</a>
+            <a href="./src/pages/publishing.html" class="w-full py-8"
+              >도서출판 행복</a
+            >
+            <a href="./src/pages/happy-edu.html" class="w-full py-8"
+              >평생교육원</a
+            >
+            <a href="./src/pages/contact.html" class="w-full py-8">문의</a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -224,9 +290,9 @@
       </section>
     </main>
 
-    <!--##################
+    <!--##################################################################
       FOOTER
-    ######################-->
+    ######################################################################-->
     <footer class="bg-gray-700 text-gray-300 px-4 py-8 lg:h-40">
       <!-- content wrapper -->
       <div
@@ -248,7 +314,7 @@
             alt="문화원 로고 이미지"
           />
           <p class="font-bold">사단법인 행복한가정문화원&nbsp;</p>
-          <p class="text-sm">&copy; 1999-<span id="year">2021</span></p>
+          <p class="text-sm">&copy; 1999-<span id="year"></span></p>
         </div>
 
         <div class="text-xs mb-4">
