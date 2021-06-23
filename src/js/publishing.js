@@ -18,7 +18,7 @@ if (bookGallary) {
   for (let i = 1; i < 4; i++) {
     bookGallary.innerHTML += `
       <div
-        class="bg-white flex flex-col justify-center items-center px-4 py-8"
+        class="bg-white flex flex-col justify-center items-center px-4 py-8 shadow-sm"
       >
         <div class="mb-4">
           <img

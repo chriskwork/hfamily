@@ -4,118 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../imgs/favicon.png" />
     <title>사단법인 행복한가정문화원</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
     <script defer src="./src/js/main.js"></script>
   </head>
   <body class="relative overflow-x-hidden">
     <!--##################
       HEADER
     ######################-->
-    <header
-      id="header"
-      class="
-        flex
-        justify-center
-        items-center
-        px-8
-        container
-        mx-auto
-        max-w-screen-xl
-        sticky
-        top-0
-        bg-gray-50
-      "
-    >
-      <nav class="flex justify-between items-center w-full h-20">
-        <a href="./index.html"
-          ><img
-            id="logo"
-            class="w-12"
-            src="./imgs/hfam-logo.png"
-            alt="행복한가정문화원 로고"
-        /></a>
-        <div id="nav-desktop" class="hidden lg:block">
-          <a href="./src/pages/about.html" class="hover:text-primary"
-            >문화원 소개</a
-          >
-          <a href="./src/pages/publishing.html" class="ml-6 hover:text-primary"
-            >도서출판 행복</a
-          >
-          <a href="./src/pages/happy-edu.html" class="ml-6 hover:text-primary"
-            >평생교육원</a
-          >
-          <a href="./src/pages/contact.html" class="ml-6 hover:text-primary"
-            >문의</a
-          >
-        </div>
-        <img
-          id="mobile-nav-open"
-          src="./imgs/header/menu.svg"
-          alt="mobile hamberger menu"
-          class="cursor-pointer w-7 lg:hidden"
-        />
-
-        <!-- mobile nav drawer -->
-        <!--when mobile menu opened, black background shows up-->
-        <div
-          id="black-cover"
-          class="
-            absolute
-            top-0
-            left-0
-            bg-black
-            opacity-70
-            w-screen
-            h-screen
-            hidden
-          "
-        ></div>
-        <div
-          id="nav-mobile"
-          class="
-            absolute
-            right-0
-            top-0
-            z-50
-            transform
-            translate-x-full
-            transition-transform
-            lg:hidden
-          "
-        >
-          <div
-            class="
-              relative
-              flex flex-col
-              justify-start
-              items-center
-              bg-white
-              w-80
-              h-screen
-              pt-20
-              shadow-lg
-              md:w-96
-            "
-          >
-            <img
-              id="mobile-nav-close"
-              src="./imgs/header/close.svg"
-              alt="닫기 버튼"
-              class="absolute top-8 right-8 cursor-pointer"
-            />
-            <a href="./src/pages/about.html" class="w-full py-8">문화원 소개</a>
-            <a href="./src/pages/publishing.html" class="w-full py-8"
+    <div class="header-wrapper sticky top-0 bg-gray-50">
+      <header
+        id="header"
+        class="
+          flex
+          justify-center
+          items-center
+          px-8
+          container
+          mx-auto
+          max-w-screen-xl
+        "
+      >
+        <nav class="flex justify-between items-center w-full h-20">
+          <a href="./index.html"
+            ><img
+              id="logo"
+              class="w-12"
+              src="./imgs/hfam-logo.png"
+              alt="행복한가정문화원 로고"
+          /></a>
+          <div id="nav-desktop" class="hidden lg:block">
+            <a href="./src/pages/about.html" class="hover:text-primary"
+              >문화원 소개</a
+            >
+            <a href="./publishing.html" class="ml-6 hover:text-primary"
               >도서출판 행복</a
             >
-            <a href="./src/pages/happy-edu.html" class="w-full py-8"
+            <a href="./happy-edu.html" class="ml-6 hover:text-primary"
               >평생교육원</a
             >
-            <a href="./src/pages/contact.html" class="w-full py-8">문의</a>
+            <a href="./contact.html" class="ml-6 hover:text-primary">문의</a>
           </div>
-        </div>
-      </nav>
-    </header>
+          <img
+            id="mobile-nav-open"
+            src="./imgs/header/menu.svg"
+            alt="mobile hamberger menu"
+            class="cursor-pointer w-7 lg:hidden"
+          />
+
+          <!-- mobile nav drawer -->
+          <!--when mobile menu opened, black background shows up-->
+          <div
+            id="black-cover"
+            class="
+              absolute
+              top-0
+              left-0
+              bg-black
+              opacity-70
+              w-screen
+              h-screen
+              hidden
+            "
+          ></div>
+          <div
+            id="nav-mobile"
+            class="
+              absolute
+              right-0
+              top-0
+              z-50
+              transform
+              translate-x-full
+              transition-transform
+              lg:hidden
+            "
+          >
+            <div
+              class="
+                relative
+                flex flex-col
+                justify-start
+                items-center
+                bg-white
+                w-80
+                h-screen
+                pt-20
+                shadow-lg
+                md:w-96
+              "
+            >
+              <img
+                id="mobile-nav-close"
+                src="./imgs/header/close.svg"
+                alt="닫기 버튼"
+                class="absolute top-8 right-8 cursor-pointer"
+              />
+              <a href="./about.html" class="w-full py-8">문화원 소개</a>
+              <a href="./publishing.html" class="w-full py-8">도서출판 행복</a>
+              <a href="./happy-edu.html" class="w-full py-8">평생교육원</a>
+              <a href="./contact.html" class="w-full py-8">문의</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
 
     <!-- Landing - intro -->
     <div
@@ -255,7 +249,7 @@
 
       <!-- %%%%%%%%%%%%%%%%%
         jibu section -->
-      <section class="px-8 pb-24 container mx-auto max-w-screen-xl">
+      <section class="px-8 mb-48 container mx-auto max-w-screen-xl">
         <div class="section-title flex items-center justify-center mb-8">
           <div class="w-10 h-px bg-gray-300"></div>
           <h1 class="font-bold text-xl mx-6">지부 모집 안내</h1>
@@ -284,11 +278,37 @@
             네트워크를 구축하고자 합니다. <br />상담에 뜻이 있는 지부와 함께
             행복한 가정문화를 만들어가고자 하오니 많은 참여 바랍니다.
             <br /><br />
-            <a href="#" class="text-sm hover:text-primary">자세히 보기</a>
+            <!-- <a href="#" class="text-sm hover:text-primary">자세히 보기</a> -->
+            <span>지부 상담/문의: 02-825-0675</span>
           </p>
         </div>
       </section>
     </main>
+
+    <!-- 관공서 링크 -->
+    <div
+      class="
+        opacity-50
+        flex flex-col
+        justify-evenly
+        items-center
+        mb-48
+        container
+        max-w-7xl
+        mx-auto
+        lg:flex-row
+      "
+    >
+      <a href="#"
+        ><img class="w-36" src="./imgs/landing/gov-tax-gray.png" alt=""
+      /></a>
+      <a href="#"
+        ><img class="w-36" src="./imgs/landing/gov-right-gray.png" alt=""
+      /></a>
+      <a href="#"
+        ><img class="w-36" src="./imgs/landing/gov-female-gray.png" alt=""
+      /></a>
+    </div>
 
     <!--##################################################################
       FOOTER

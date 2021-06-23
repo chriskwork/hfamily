@@ -6,17 +6,21 @@ const mobileMenu = document.querySelector('#nav-mobile')
 const blackBg = document.querySelector('#black-cover')
 const body = document.querySelector('body')
 
+function closeMenu() {
+  mobileMenu.classList.add('translate-x-full')
+  blackBg.classList.add('hidden')
+  body.classList.remove('overflow-y-hidden')
+}
+
 menuOpenBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('translate-x-full')
   blackBg.classList.remove('hidden')
   body.classList.add('overflow-y-hidden')
 })
 
-menuCloseBtn.addEventListener('click', () => {
-  mobileMenu.classList.add('translate-x-full')
-  blackBg.classList.add('hidden')
-  body.classList.remove('overflow-y-hidden')
-})
+blackBg.addEventListener('click', closeMenu)
+
+menuCloseBtn.addEventListener('click', closeMenu)
 
 // Footer - current year
 

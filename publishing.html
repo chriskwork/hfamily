@@ -4,110 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../imgs/favicon.png" />
     <title>사단법인 행복한가정문화원</title>
-    <link rel="stylesheet" href="../../css/styles.css" />
-    <link rel="stylesheet" href="../../css/custom.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
   </head>
   <body class="relative overflow-x-hidden">
     <!--##################
       HEADER
     ######################-->
-    <header
-      id="header"
-      class="
-        flex
-        justify-center
-        items-center
-        px-8
-        container
-        mx-auto
-        max-w-screen-xl
-        sticky
-        top-0
-        bg-gray-50
-      "
-    >
-      <nav class="flex justify-between items-center w-full h-20">
-        <a href="../../index.html"
-          ><img
-            id="logo"
-            class="w-12"
-            src="../../imgs/hfam-logo.png"
-            alt="행복한가정문화원 로고"
-        /></a>
-        <div id="nav-desktop" class="hidden lg:block">
-          <a href="./about.html" class="text-primary">문화원 소개</a>
-          <a href="./publishing.html" class="ml-6 hover:text-primary"
-            >도서출판 행복</a
-          >
-          <a href="./happy-edu.html" class="ml-6 hover:text-primary"
-            >평생교육원</a
-          >
-          <a href="./contact.html" class="ml-6 hover:text-primary">문의</a>
-        </div>
-        <img
-          id="mobile-nav-open"
-          src="../../imgs/header/menu.svg"
-          alt="mobile hamberger menu"
-          class="cursor-pointer w-7 lg:hidden"
-        />
+    <div class="header-wrapper sticky top-0 bg-gray-50">
+      <header
+        id="header"
+        class="
+          flex
+          justify-center
+          items-center
+          px-8
+          container
+          mx-auto
+          max-w-screen-xl
+        "
+      >
+        <nav class="flex justify-between items-center w-full h-20">
+          <a href="../../index.html"
+            ><img
+              id="logo"
+              class="w-12"
+              src="../../imgs/hfam-logo.png"
+              alt="행복한가정문화원 로고"
+          /></a>
+          <div id="nav-desktop" class="hidden lg:block">
+            <a href="./about.html" class="hover:text-primary">문화원 소개</a>
+            <a href="./publishing.html" class="ml-6 text-primary"
+              >도서출판 행복</a
+            >
+            <a href="./happy-edu.html" class="ml-6 hover:text-primary"
+              >평생교육원</a
+            >
+            <a href="./contact.html" class="ml-6 hover:text-primary">문의</a>
+          </div>
+          <img
+            id="mobile-nav-open"
+            src="../../imgs/header/menu.svg"
+            alt="mobile hamberger menu"
+            class="cursor-pointer w-7 lg:hidden"
+          />
 
-        <!-- mobile nav drawer -->
-        <!--when mobile menu opened, black background shows up-->
-        <div
-          id="black-cover"
-          class="
-            absolute
-            top-0
-            left-0
-            bg-black
-            opacity-70
-            w-screen
-            h-screen
-            hidden
-          "
-        ></div>
-        <div
-          id="nav-mobile"
-          class="
-            absolute
-            right-0
-            top-0
-            z-50
-            transform
-            translate-x-full
-            transition-transform
-            lg:hidden
-          "
-        >
+          <!-- mobile nav drawer -->
+          <!--when mobile menu opened, black background shows up-->
           <div
+            id="black-cover"
             class="
-              relative
-              flex flex-col
-              justify-start
-              items-center
-              bg-white
-              w-80
+              absolute
+              top-0
+              left-0
+              bg-black
+              opacity-70
+              w-screen
               h-screen
-              pt-20
-              shadow-lg
-              md:w-96
+              hidden
+            "
+          ></div>
+          <div
+            id="nav-mobile"
+            class="
+              absolute
+              right-0
+              top-0
+              z-50
+              transform
+              translate-x-full
+              transition-transform
+              lg:hidden
             "
           >
-            <img
-              id="mobile-nav-close"
-              src="../../imgs/header/close.svg"
-              alt="닫기 버튼"
-              class="absolute top-8 right-8 cursor-pointer"
-            />
-            <a href="./about.html" class="w-full py-8">문화원 소개</a>
-            <a href="./publishing.html" class="w-full py-8">도서출판 행복</a>
-            <a href="./happy-edu.html" class="w-full py-8">평생교육원</a>
-            <a href="./contact.html" class="w-full py-8">문의</a>
+            <div
+              class="
+                relative
+                flex flex-col
+                justify-start
+                items-center
+                bg-white
+                w-80
+                h-screen
+                pt-20
+                shadow-lg
+                md:w-96
+              "
+            >
+              <img
+                id="mobile-nav-close"
+                src="../../imgs/header/close.svg"
+                alt="닫기 버튼"
+                class="absolute top-8 right-8 cursor-pointer"
+              />
+              <a href="./about.html" class="w-full py-8">문화원 소개</a>
+              <a href="./publishing.html" class="w-full py-8">도서출판 행복</a>
+              <a href="./happy-edu.html" class="w-full py-8">평생교육원</a>
+              <a href="./contact.html" class="w-full py-8">문의</a>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </div>
 
     <!--banner image-->
     <div
@@ -132,7 +132,7 @@
       </div>
 
       <!-- 신간 -->
-      <div class="new-book-wrapper container px-8 mb-12">
+      <div class="new-book-wrapper container px-8 mb-12 mx-auto">
         <div
           class="
             bg-white
@@ -142,6 +142,9 @@
             items-center
             px-4
             py-16
+            shadow-sm
+            lg:flex-row
+            lg:px-32
           "
         >
           <div class="w-4/5">
@@ -153,7 +156,7 @@
             />
           </div>
           <div>
-            <div class="flex justify-center items-center mb-4">
+            <div class="flex justify-center items-center mb-4 lg:justify-start">
               <h2
                 id="new-book-title"
                 class="text-xl font-bold text-secondary"
@@ -171,8 +174,11 @@
                 >신간</span
               >
             </div>
-            <p id="new-book-author" class="text-xs text-gray-400 mb-4"></p>
-            <p id="new-book-desc" class="text-sm"></p>
+            <p
+              id="new-book-author"
+              class="text-xs text-gray-400 mb-4 lg:text-left"
+            ></p>
+            <p id="new-book-desc" class="text-sm lg:text-left"></p>
           </div>
         </div>
       </div>
@@ -190,6 +196,8 @@
           px-8
           text-gray-600
           cursor-pointer
+          max-w-7xl
+          mx-auto
         "
       >
         <svg
@@ -212,7 +220,15 @@
       <!-- 단행본 Grid -->
       <div
         id="book-gallary"
-        class="container px-8 grid grid-cols-1 gap-4 mb-24"
+        class="
+          container
+          px-8
+          grid grid-cols-1
+          gap-4
+          mb-24
+          mx-auto
+          lg:grid-cols-3
+        "
       >
         <!-- cards -->
         <!-- <div
@@ -269,7 +285,17 @@
         </button>
       </div>
 
-      <div class="px-8 grid grid-cols-1 gap-4 mb-12">
+      <div
+        class="
+          container
+          px-8
+          grid grid-cols-1
+          gap-4
+          mb-12
+          mx-auto
+          lg:grid-cols-3
+        "
+      >
         <div class="w-full h-72 bg-gray-200 rounded-lg"></div>
         <div class="w-full h-72 bg-gray-200 rounded-lg"></div>
         <div class="w-full h-72 bg-gray-200 rounded-lg"></div>
@@ -347,7 +373,7 @@
     </footer>
   </body>
 
-  <script src="../js/main.js"></script>
-  <script src="../js/book-data.js"></script>
-  <script src="../js/publishing.js"></script>
+  <script src="./src/js/main.js"></script>
+  <script src="./src/js/book-data.js"></script>
+  <script src="./src/js/publishing.js"></script>
 </html>
