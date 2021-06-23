@@ -2,7 +2,7 @@ const books = [
   {
     id: 24,
     img: '../imgs/happy-books/book-gallary/24lovejesus.jpg',
-    thumbnail: '../../imgs/books/book-gallary/24lovejesus-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/24lovejesus-tnail.jpg',
     title: '예수님과 사랑에 빠져라',
     author: '김일로',
     description:
@@ -12,7 +12,7 @@ const books = [
   {
     id: 23,
     img: '../imgs/happy-books/book-gallary/23tree.jpg',
-    thumbnail: '../../imgs/books/book-gallary/23tree-tnail.png',
+    thumbnail: './imgs/books/book-gallary/23tree-tnail.png',
     title: '소나무처럼',
     author: '박순옥',
     description: '',
@@ -21,7 +21,7 @@ const books = [
   {
     id: 22,
     img: '../imgs/happy-books/book-gallary/22warmheart.jpg',
-    thumbnail: '../../imgs/books/book-gallary/22warmheart-tnail.png',
+    thumbnail: './imgs/books/book-gallary/22warmheart-tnail.png',
     title: '설교를 돕기 위한 글모음: 마음이 따뜻한 사람',
     author: '양명환',
     description:
@@ -31,7 +31,7 @@ const books = [
   {
     id: 21,
     img: '../imgs/happy-books/book-gallary/21jangrye.jpg',
-    thumbnail: '../../imgs/books/book-gallary/21jangrye-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/21jangrye-tnail.jpg',
     title: '성경에서 말하는 장례',
     author: '김헌수',
     description:
@@ -89,7 +89,7 @@ const books = [
   {
     id: 20,
     img: '../imgs/happy-books/book-gallary/20wangdda.jpg',
-    thumbnail: '../../imgs/books/book-gallary/20wangdda-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/20wangdda-tnail.jpg',
     title: '왕따가 왕이 된 이야기',
     author: '김기현',
     description: '',
@@ -98,7 +98,7 @@ const books = [
   {
     id: 19,
     img: '../imgs/happy-books/book-gallary/19stillgood.jpg',
-    thumbnail: '../../imgs/books/book-gallary/19stillgood-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/19stillgood-tnail.jpg',
     title: '설교를 돕기 위한 글모음: 여전히 좋은 사람',
     author: '양명환',
     description:
@@ -108,7 +108,7 @@ const books = [
   {
     id: 18,
     img: '../imgs/happy-books/book-gallary/18guwon.jpg',
-    thumbnail: '../../imgs/books/book-gallary/18guwon-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/18guwon-tnail.jpg',
     title: '새신자와 평신도 교육교재 - 구원의 은총',
     author: '양명환',
     description:
@@ -118,7 +118,7 @@ const books = [
   {
     id: 17,
     img: '../imgs/happy-books/book-gallary/17whonow.jpg',
-    thumbnail: '../../imgs/books/book-gallary/17whonow-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/17whonow-tnail.jpg',
     title: '왜 지금 비전과 사명을 논해야 하는가?',
     author: '이남인',
     description: '',
@@ -127,7 +127,7 @@ const books = [
   {
     id: 16,
     img: '../imgs/happy-books/book-gallary/16happyperson.jpg',
-    thumbnail: '../../imgs/books/book-gallary/16happyperson-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/16happyperson-tnail.jpg',
     title: '설교를 돕기 위한 글모음: 가장 행복한 사람',
     author: '양명환',
     description:
@@ -137,7 +137,7 @@ const books = [
   {
     id: 15,
     img: '../imgs/happy-books/book-gallary/15gido2.jpg',
-    thumbnail: '../../imgs/books/book-gallary/15gido2-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/15gido2-tnail.jpg',
     title: '새신자와 평신도가 필요로 하는 대표기도문(1, 2)',
     author: '양명환',
     description:
@@ -147,7 +147,7 @@ const books = [
   {
     id: 14,
     img: '../imgs/happy-books/book-gallary/14soul.jpg',
-    thumbnail: '../../imgs/books/book-gallary/14soul-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/14soul-tnail.jpg',
     title: '당신의 영혼은 안녕하십니까?',
     author: '정수환',
     description: '',
@@ -156,7 +156,7 @@ const books = [
   {
     id: 13,
     img: '../imgs/happy-books/book-gallary/13sinbaram.jpg',
-    thumbnail: '../../imgs/books/book-gallary/13sinbaram-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/13sinbaram-tnail.jpg',
     title: '신바람 박사와 실컷 웃어 보자',
     author: '황수관',
     description: '',
@@ -165,7 +165,7 @@ const books = [
   {
     id: 12,
     img: '../imgs/happy-books/book-gallary/12counseling.jpg',
-    thumbnail: '../../imgs/books/book-gallary/12counseling-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/12counseling-tnail.jpg',
     title: '크리스천 카운셀링 네비게이터',
     author: '김영란',
     description: '',
@@ -174,7 +174,7 @@ const books = [
   {
     id: 11,
     img: '../imgs/happy-books/book-gallary/11sweethome.jpg',
-    thumbnail: '../../imgs/books/book-gallary/11sweethome-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/11sweethome-tnail.jpg',
     title: 'Home, Sweet 홈',
     author: '안정은',
     description:
@@ -184,7 +184,7 @@ const books = [
   {
     id: 10,
     img: '../imgs/happy-books/book-gallary/10tree.jpg',
-    thumbnail: '../../imgs/books/book-gallary/10tree-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/10tree-tnail.jpg',
     title: '생명나무 이야기',
     author: '김동일',
     description: '',
@@ -193,7 +193,7 @@ const books = [
   {
     id: 9,
     img: '../imgs/happy-books/book-gallary/09choice.jpg',
-    thumbnail: '../../imgs/books/book-gallary/09choice-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/09choice-tnail.jpg',
     title: '행복의 선택',
     author: '조주영',
     description: '',
@@ -202,7 +202,7 @@ const books = [
   {
     id: 8,
     img: '../imgs/happy-books/book-gallary/08think.jpg',
-    thumbnail: '../../imgs/books/book-gallary/08think-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/08think-tnail.jpg',
     title: '조금만 생각을 바꾸면!',
     author: '박현식',
     description: '',
@@ -211,7 +211,7 @@ const books = [
   {
     id: 7,
     img: '../imgs/happy-books/book-gallary/07miss.jpg',
-    thumbnail: '../../imgs/books/book-gallary/07miss-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/07miss-tnail.jpg',
     title: '사무치는 그리움',
     author: '박명환',
     description:
@@ -221,7 +221,7 @@ const books = [
   {
     id: 6,
     img: '../imgs/happy-books/book-gallary/06metdol.jpg',
-    thumbnail: '../../imgs/books/book-gallary/06metdol-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/06metdol-tnail.jpg',
     title: '물맷돌 성경공부',
     author: '정수환',
     description:
@@ -231,7 +231,7 @@ const books = [
   {
     id: 5,
     img: '../imgs/happy-books/book-gallary/05yechan.jpg',
-    thumbnail: '../../imgs/books/book-gallary/05yechan-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/05yechan-tnail.jpg',
     title: '웃음예찬',
     author: '조주영, 오현숙',
     description: '',
@@ -274,7 +274,7 @@ const books = [
   {
     id: 4,
     img: '../imgs/happy-books/book-gallary/04imji.jpg',
-    thumbnail: '../../imgs/books/book-gallary/04imji-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/04imji-tnail.jpg',
     title: '목회임지! 무엇이든지 물어보세요',
     author: '박현식',
     description:
@@ -284,7 +284,7 @@ const books = [
   {
     id: 3,
     img: '../imgs/happy-books/book-gallary/03sinbaram.jpg',
-    thumbnail: '../../imgs/books/book-gallary/03sinbaram.jpg',
+    thumbnail: './imgs/books/book-gallary/03sinbaram.jpg',
     title: '황수관 박사와 실컷 웃어보자',
     author: '황수관',
     description:
@@ -294,7 +294,7 @@ const books = [
   {
     id: 2,
     img: '../imgs/happy-books/book-gallary/02stairs.jpg',
-    thumbnail: '../../imgs/books/book-gallary/02stairs-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/02stairs-tnail.jpg',
     title: '행복의 계단',
     author: '조주영',
     description: `책 한권을 읽는다는 것은 또 하나의 인생과의 만남을 의미합니다. 조주영 교수의 "행복의 계단"을 읽으면서 저자의 아름답고 깊은 마음, 다른 사람과 더불어 살아가려는 마음, 인생의 기로에 서있는 청소년에게 향하는 사랑의 마음, 행복한 생활인의 마음과 만나 출간의 기쁨과 더불어 행복한 시간을 가졌습니다.
@@ -367,7 +367,7 @@ const books = [
   {
     id: 1,
     img: '../imgs/happy-books/book-gallary/01bubuschool.jpg',
-    thumbnail: '../../imgs/books/book-gallary/01bubuschool-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/01bubuschool-tnail.jpg',
     title: '성숙한 가정을 위한 행복한부부학교 워크북',
     author: '김병훈',
     description:
