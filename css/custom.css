@@ -25,6 +25,14 @@ html {
   fill: var(--clr-primary);
 }
 
+#magazine,
+#mini-magazine,
+#products,
+#jibu,
+#donation {
+  scroll-margin-top: 5rem;
+}
+
 /* publishing.html */
 #publishing-banner {
   background-image: url(../imgs/books/books.jpg);

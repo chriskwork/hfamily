@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./imgs/favicon.png" />
     <title>사단법인 행복한가정문화원</title>
-    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/custom.css" />
     <script defer src="./js/main.js"></script>
     <script defer src="./js/about.js"></script>
   </head>
-  <body class="relative overflow-x-hidden">
+  <body class="relative">
     <!--##################
       HEADER
     ######################-->
@@ -132,345 +132,354 @@
       MAIN
     ###################################################-->
     <main class="mb-24">
-      <div class="section-title flex items-center justify-center mb-4">
-        <div class="w-10 h-px bg-gray-300"></div>
-        <h1 class="font-bold text-xl mx-6">월간 행복한가정 소개</h1>
-        <div class="w-10 h-px bg-gray-300"></div>
-      </div>
-      <p class="mb-8 text-xs text-gray-400 px-12">
-        우리 문화원에서는 크리스천 잡지 월간 '행복한가정'을 발행하여 전국 교회와
-        경찰서, 군부대, 교도소 등의 특수시설에 보내져 가정의 소중함을 알리고
-        있습니다.
-      </p>
+      <section id="magazine">
+        <div class="section-title flex items-center justify-center mb-4">
+          <div class="w-10 h-px bg-gray-300"></div>
+          <h1 class="font-bold text-xl mx-6">월간 행복한가정 소개</h1>
+          <div class="w-10 h-px bg-gray-300"></div>
+        </div>
+        <p class="mb-8 text-xs text-gray-400 px-12">
+          우리 문화원에서는 크리스천 잡지 월간 '행복한가정'을 발행하여 전국
+          교회와 경찰서, 군부대, 교도소 등의 특수시설에 보내져 가정의 소중함을
+          알리고 있습니다.
+        </p>
 
-      <!-- 월간지 배너 그림 -->
-      <div
-        class="
-          w-full
-          px-8
-          mx-auto
-          mb-8
-          overflow-hidden
-          h-80
-          md:w-full
-          lg:max-w-7xl
-        "
-      >
-        <img
-          src="./imgs/books/magazine-mockup-1080.jpg"
-          alt=""
-          class="w-full h-full object-cover rounded-md"
-        />
-      </div>
-
-      <!-- 월간지 Grid -->
-      <div
-        class="
-          container
-          mx-auto
-          max-w-7xl
-          grid grid-cols-1
-          px-8
-          gap-4
-          mb-12
-          text-gray-400
-          lg:grid-cols-3
-        "
-      >
-        <!-- cards -->
-        <div class="bg-white shadow-sm rounded-md px-4 py-8">
-          <h3 class="font-bold text-lg mb-4 text-gray-500">
-            월간 행복한가정은
-          </h3>
-          <div class="text-sm mb-8 text-left px-4">
-            <div
-              class="
-                flex
-                items-start
-                justify-start
-                mb-2
-                md:justify-center
-                lg:justify-start
-              "
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>2016, 2017, 2020 우수잡지 선정 (문화체육관광부)</p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>가정, 기타 전문가들의 칼럼</p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>매일 묵상 또는 가정예배를 드릴 수 있는 목사님들의 설교원고</p>
-            </div>
-          </div>
-          <p>
-            1년 정기 구독료<br />
-            60,000 -> <span class="font-bold text-lg text-primary">50,000</span>
-          </p>
+        <!-- 월간지 배너 그림 -->
+        <div
+          class="
+            w-full
+            px-8
+            mx-auto
+            mb-8
+            overflow-hidden
+            h-80
+            md:w-full
+            lg:max-w-7xl
+          "
+        >
+          <img
+            src="./imgs/books/magazine-mockup-1080.jpg"
+            alt=""
+            class="w-full h-full object-cover rounded-md"
+          />
         </div>
 
-        <div class="bg-white shadow-sm rounded-md px-4 py-8">
-          <h3 class="font-bold text-lg mb-4 text-gray-500">
-            후원1004가 되어주세요!
-          </h3>
-          <div class="text-sm mb-8 text-left px-4">
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>
-                원하시는 기관이나 단체에 후원천사 이름으로 월간 행복한가정을
-                보내드립니다.
-              </p>
+        <!-- 월간지 Grid -->
+        <div
+          class="
+            container
+            mx-auto
+            max-w-7xl
+            grid grid-cols-1
+            px-8
+            gap-4
+            mb-12
+            text-gray-400
+            lg:grid-cols-3
+          "
+        >
+          <!-- cards -->
+          <div class="bg-white shadow-sm rounded-md px-4 py-8">
+            <h3 class="font-bold text-lg mb-4 text-gray-500">
+              월간 행복한가정은
+            </h3>
+            <div class="text-sm mb-8 text-left px-4">
+              <div
+                class="
+                  flex
+                  items-start
+                  justify-start
+                  mb-2
+                  md:justify-center
+                  lg:justify-start
+                "
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>2016, 2017, 2020 우수잡지 선정 (문화체육관광부)</p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>가정, 기타 전문가들의 칼럼</p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>
+                  매일 묵상 또는 가정예배를 드릴 수 있는 목사님들의 설교원고
+                </p>
+              </div>
             </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>월간 행복한가정을 후원1004님 가정에 무료로 보내드립니다.</p>
-            </div>
+            <p>
+              1년 정기 구독료<br />
+              60,000 ->
+              <span class="font-bold text-lg text-primary">50,000</span>
+            </p>
           </div>
-          <p class="font-bold text-lg text-primary">
-            1구좌: 월 10부(50,000) <br />
-            2구좌: 월 20부(100,000)
-          </p>
-        </div>
 
-        <div class="bg-white shadow-sm rounded-md px-4 py-8">
-          <h3 class="font-bold text-lg mb-4 text-gray-500">
-            정기구독자, 후원1004의 행복
-          </h3>
-          <div class="text-sm text-left px-4">
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>
-                (사)행복한가정문화원에서 주관하는 프로그램 참여시 20% 할인
-                혜택을 드립니다.
-              </p>
+          <div class="bg-white shadow-sm rounded-md px-4 py-8">
+            <h3 class="font-bold text-lg mb-4 text-gray-500">
+              후원1004가 되어주세요!
+            </h3>
+            <div class="text-sm mb-8 text-left px-4">
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>
+                  원하시는 기관이나 단체에 후원천사 이름으로 월간 행복한가정을
+                  보내드립니다.
+                </p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>월간 행복한가정을 후원1004님 가정에 무료로 보내드립니다.</p>
+              </div>
             </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>
-                (사)행복한가정문화원에서 발행하는 월간 행복한가정을
-                보내드립니다.
-              </p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>
-                도서출판 행복에서 발행하는 도서를 20% 할인된 가격에 구입하실 수
-                있습니다.
-              </p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>도서출판 및 각종 인쇄물을 실비로 제작해 드립니다.</p>
+            <p class="font-bold text-lg text-primary">
+              1구좌: 월 10부(50,000) <br />
+              2구좌: 월 20부(100,000)
+            </p>
+          </div>
+
+          <div class="bg-white shadow-sm rounded-md px-4 py-8">
+            <h3 class="font-bold text-lg mb-4 text-gray-500">
+              정기구독자, 후원1004의 행복
+            </h3>
+            <div class="text-sm text-left px-4">
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>
+                  (사)행복한가정문화원에서 주관하는 프로그램 참여시 20% 할인
+                  혜택을 드립니다.
+                </p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>
+                  (사)행복한가정문화원에서 발행하는 월간 행복한가정을
+                  보내드립니다.
+                </p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>
+                  도서출판 행복에서 발행하는 도서를 20% 할인된 가격에 구입하실
+                  수 있습니다.
+                </p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>도서출판 및 각종 인쇄물을 실비로 제작해 드립니다.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- 월간 행복한가정 소책자 -->
-      <h1 class="font-bold text-xl mb-8 text-gray-500">
-        월간 행복한가정 소책자
-      </h1>
+      <section id="mini-magazine">
+        <h1 class="font-bold text-xl mb-8 text-gray-500">
+          월간 행복한가정 소책자
+        </h1>
 
-      <!-- 소책자 배너 그림 -->
-      <div class="w-full px-8 mx-auto mb-8 overflow-hidden h-80 lg:max-w-7xl">
-        <img
-          src="./imgs/books/mockup-square-magazine-1080.jpg"
-          alt=""
-          class="w-full h-full object-cover rounded-md"
-        />
-      </div>
-
-      <!-- 소책자 Grid -->
-      <div
-        class="
-          container
-          mx-auto
-          max-w-7xl
-          grid grid-cols-1
-          px-8
-          gap-4
-          mb-12
-          text-gray-400
-          lg:grid-cols-3
-        "
-      >
-        <!-- cards -->
-        <div class="bg-white shadow-sm rounded-md px-4 py-8">
-          <h3 class="font-bold text-lg mb-4 text-gray-500">
-            월간 행복한가정 소책자는
-          </h3>
-          <div class="text-sm mb-8 text-left px-4">
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>교회 홍보용으로 쓰기 좋은 사이즈</p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>가정, 기타 전문가들의 칼럼</p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>매일 묵상 또는 가정예배를 드릴 수 있는 목사님들의 설교원고</p>
-            </div>
-          </div>
-          <p class="text-gray-500">
-            1권 당
-            <span class="font-bold text-lg text-primary">400</span>원
-            <span class="text-xs">&nbsp;(기본부수 1,000부)</span>
-          </p>
+        <!-- 소책자 배너 그림 -->
+        <div class="w-full px-8 mx-auto mb-8 overflow-hidden h-80 lg:max-w-7xl">
+          <img
+            src="./imgs/books/mockup-square-magazine-1080.jpg"
+            alt=""
+            class="w-full h-full object-cover rounded-md"
+          />
         </div>
 
-        <div class="bg-white shadow-sm rounded-md px-4 py-8">
-          <h3 class="font-bold text-lg mb-4 text-gray-500">
-            많은 교회가 전도책자로 사용중!
-          </h3>
-          <div class="text-sm mb-8 text-left px-4">
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>매월 또는 원하시는 기간마다 발행이 가능합니다.</p>
+        <!-- 소책자 Grid -->
+        <div
+          class="
+            container
+            mx-auto
+            max-w-7xl
+            grid grid-cols-1
+            px-8
+            gap-4
+            mb-12
+            text-gray-400
+            lg:grid-cols-3
+          "
+        >
+          <!-- cards -->
+          <div class="bg-white shadow-sm rounded-md px-4 py-8">
+            <h3 class="font-bold text-lg mb-4 text-gray-500">
+              월간 행복한가정 소책자는
+            </h3>
+            <div class="text-sm mb-8 text-left px-4">
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>교회 홍보용으로 쓰기 좋은 사이즈</p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>가정, 기타 전문가들의 칼럼</p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>
+                  매일 묵상 또는 가정예배를 드릴 수 있는 목사님들의 설교원고
+                </p>
+              </div>
             </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>원하시는 제호를 사용하실 수 있습니다.</p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>교회 또는 기관 이름과 주소를 넣어드립니다.</p>
-            </div>
+            <p class="text-gray-500">
+              1권 당
+              <span class="font-bold text-lg text-primary">400</span>원
+              <span class="text-xs">&nbsp;(기본부수 1,000부)</span>
+            </p>
           </div>
-        </div>
 
-        <div class="bg-white shadow-sm rounded-md px-4 py-8">
-          <h3 class="font-bold text-lg mb-4 text-gray-500">
-            이렇게 활용하세요
-          </h3>
-          <div class="text-sm text-left px-4">
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>교회에서 야외전도시 이웃에게 배포하는 전도책자로 활용.</p>
+          <div class="bg-white shadow-sm rounded-md px-4 py-8">
+            <h3 class="font-bold text-lg mb-4 text-gray-500">
+              많은 교회가 전도책자로 사용중!
+            </h3>
+            <div class="text-sm mb-8 text-left px-4">
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>매월 또는 원하시는 기간마다 발행이 가능합니다.</p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>원하시는 제호를 사용하실 수 있습니다.</p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>교회 또는 기관 이름과 주소를 넣어드립니다.</p>
+              </div>
             </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>
-                유동인구가 많은 곳에 홍보용으로 비치해 두고 누구나 가져갈 수
-                있도록 합니다.
-              </p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>교회 내부 정기 발행물 형식으로 활용하실 수 있습니다.</p>
+          </div>
+
+          <div class="bg-white shadow-sm rounded-md px-4 py-8">
+            <h3 class="font-bold text-lg mb-4 text-gray-500">
+              이렇게 활용하세요
+            </h3>
+            <div class="text-sm text-left px-4">
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>교회에서 야외전도시 이웃에게 배포하는 전도책자로 활용.</p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>
+                  유동인구가 많은 곳에 홍보용으로 비치해 두고 누구나 가져갈 수
+                  있도록 합니다.
+                </p>
+              </div>
+              <div
+                class="flex items-start mb-2 md:justify-center lg:justify-start"
+              >
+                <img
+                  class="mr-1"
+                  src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                  alt=""
+                />
+                <p>교회 내부 정기 발행물 형식으로 활용하실 수 있습니다.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- TODO: 소책자 스펙 디테일 & 상담, 파일 전송 시 주의사항 추가 -->
 
@@ -680,18 +689,20 @@
 
       <!--#############################################################
         문화원 지부 모집 안내 -->
-      <div class="section-title flex items-center justify-center mb-4">
-        <div class="w-10 h-px bg-gray-300"></div>
-        <h1 class="font-bold text-xl mx-6">지부 안내</h1>
-        <div class="w-10 h-px bg-gray-300"></div>
-      </div>
-      <p class="mb-8 text-xs text-gray-400 px-12">
-        사단법인 행복한가정문화원은 행복한 가정을 위한 평생교육의 전국적인
-        네트워크를 구축하고자 합니다. <br />상담에 뜻이 있는 지부와 함께 행복한
-        가정문화를 만들어가고자 하오니 많은 참여 바랍니다.
-      </p>
+      <section id="jibu">
+        <div class="section-title flex items-center justify-center mb-4">
+          <div class="w-10 h-px bg-gray-300"></div>
+          <h1 class="font-bold text-xl mx-6">지부 안내</h1>
+          <div class="w-10 h-px bg-gray-300"></div>
+        </div>
+        <p class="mb-8 text-xs text-gray-400 px-12">
+          사단법인 행복한가정문화원은 행복한 가정을 위한 평생교육의 전국적인
+          네트워크를 구축하고자 합니다. <br />상담에 뜻이 있는 지부와 함께
+          행복한 가정문화를 만들어가고자 하오니 많은 참여 바랍니다.
+        </p>
 
-      지부 현황 (준비중입니다)
+        지부 현황 (준비중입니다)
+      </section>
     </main>
 
     <!--#############################################################
