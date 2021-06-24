@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./imgs/favicon.png" />
     <title>사단법인 행복한가정문화원</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./css/custom.css" />
     <script defer src="./js/main.js"></script>
     <script defer src="./js/about.js"></script>
@@ -38,13 +38,21 @@
           /></a>
           <div id="nav-desktop" class="hidden lg:block">
             <a href="./about.html" class="text-primary">문화원 소개</a>
-            <a href="./publishing.html" class="ml-6 hover:text-primary"
+            <a
+              href="./publishing.html"
+              class="ml-6 transition-colors hover:text-primary"
               >도서출판 행복</a
             >
-            <a href="./happy-edu.html" class="ml-6 hover:text-primary"
+            <a
+              href="./happy-edu.html"
+              class="ml-6 transition-colors hover:text-primary"
               >평생교육원</a
             >
-            <a href="./contact.html" class="ml-6 hover:text-primary">문의</a>
+            <a
+              href="./contact.html"
+              class="ml-6 transition-colors hover:text-primary"
+              >문의</a
+            >
           </div>
           <img
             id="mobile-nav-open"
@@ -687,6 +695,149 @@
     </main>
 
     <!--#############################################################
+        연간 기부금 모금액 및 활용실적 -->
+    <section id="donation" class="mb-24">
+      <h3 class="font-bold mb-8 text-gray-500">
+        연간 기부금 모금액 및 활용실적
+      </h3>
+      <div class="text-gray-400 text-sm">
+        <ul>
+          <li class="flex justify-center items-center mb-1">
+            2020년도 연간 기부금 모금액 및 활용실적 &nbsp;
+            <a
+              href="https://drive.google.com/file/d/13g_CJMTE98sPAA4kUQrolbAlJFph5Sp3/view?usp=sharing"
+              class="custom-see-donation-docu"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#9CA3AF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M20 19.59V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.86.56-1.89.88-3 .82-2.37-.11-4.4-1.96-4.72-4.31-.44-3.35 2.45-6.18 5.83-5.61 1.95.33 3.57 1.85 4 3.78.33 1.46.01 2.82-.7 3.9L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="flex justify-center items-center mb-1">
+            2019년도 연간 기부금 모금액 및 활용실적 &nbsp;
+            <a
+              href="https://drive.google.com/file/d/1Low9U-kuxZkeFJbjvvWByjIr_dEv22Mz/view?usp=sharing"
+              class="custom-see-donation-docu"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#9CA3AF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M20 19.59V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.86.56-1.89.88-3 .82-2.37-.11-4.4-1.96-4.72-4.31-.44-3.35 2.45-6.18 5.83-5.61 1.95.33 3.57 1.85 4 3.78.33 1.46.01 2.82-.7 3.9L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="flex justify-center items-center mb-1">
+            2018년도 연간 기부금 모금액 및 활용실적 &nbsp;
+            <a
+              href="https://drive.google.com/file/d/18neEGGmot_HR4yUhE2ub07C3cqni4WRY/view?usp=sharing"
+              class="custom-see-donation-docu"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#9CA3AF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M20 19.59V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.86.56-1.89.88-3 .82-2.37-.11-4.4-1.96-4.72-4.31-.44-3.35 2.45-6.18 5.83-5.61 1.95.33 3.57 1.85 4 3.78.33 1.46.01 2.82-.7 3.9L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="flex justify-center items-center mb-1">
+            2017년도 연간 기부금 모금액 및 활용실적 &nbsp;
+            <a
+              href="https://drive.google.com/file/d/1DZHSdfBBIrf8PxzKii-OzSSlOG4YZ5Tr/view?usp=sharing"
+              class="custom-see-donation-docu"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#9CA3AF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M20 19.59V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.86.56-1.89.88-3 .82-2.37-.11-4.4-1.96-4.72-4.31-.44-3.35 2.45-6.18 5.83-5.61 1.95.33 3.57 1.85 4 3.78.33 1.46.01 2.82-.7 3.9L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="flex justify-center items-center mb-1">
+            2016년도 연간 기부금 모금액 및 활용실적 &nbsp;
+            <a
+              href="https://drive.google.com/file/d/1hif16BeFiT7nBnkm0svQ9HiwgiSWsAUB/view?usp=sharing"
+              class="custom-see-donation-docu"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#9CA3AF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M20 19.59V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.86.56-1.89.88-3 .82-2.37-.11-4.4-1.96-4.72-4.31-.44-3.35 2.45-6.18 5.83-5.61 1.95.33 3.57 1.85 4 3.78.33 1.46.01 2.82-.7 3.9L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="flex justify-center items-center mb-1">
+            2015년도 연간 기부금 모금액 및 활용실적 &nbsp;
+            <a
+              href="https://drive.google.com/file/d/1PhJQFDA-n_e_TLKh3n4QwGnx_r6Exmtm/view?usp=sharing"
+              class="custom-see-donation-docu"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#9CA3AF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M20 19.59V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.86.56-1.89.88-3 .82-2.37-.11-4.4-1.96-4.72-4.31-.44-3.35 2.45-6.18 5.83-5.61 1.95.33 3.57 1.85 4 3.78.33 1.46.01 2.82-.7 3.9L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--#############################################################
       FOOTER
     ######################################################-->
     <footer class="bg-gray-700 text-gray-300 px-4 py-8 lg:h-40">
@@ -718,18 +869,18 @@
         </div>
 
         <div id="social" class="flex justify-center items-center">
-          <a href="#">
+          <a href="https://www.facebook.com/hfamilycc/">
             <img
               src="./imgs/social-icon/facebook_black_24dp.svg"
               alt="페이스북 아이콘"
-              class="w-8 mx-2"
+              class="w-8 mx-4 lg:mr-8"
             />
           </a>
-          <a href="#">
+          <a href="https://band.us/band/3044477">
             <img
               src="./imgs/social-icon/bandLogo.png"
               alt="밴드 아이콘"
-              class="w-6 mx-2"
+              class="w-5 mx-4 lg:mx-0"
             />
           </a>
         </div>

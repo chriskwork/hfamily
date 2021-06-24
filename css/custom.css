@@ -6,11 +6,23 @@ html {
   z-index: 9999;
 }
 
+:root {
+  --clr-primary: #ff7777;
+}
+
 /* about.html */
 #about-banner {
   background-image: url(../imgs/about/about.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.custom-see-donation-docu svg {
+  transition: all 150ms;
+}
+
+.custom-see-donation-docu svg:hover {
+  fill: var(--clr-primary);
 }
 
 /* publishing.html */
@@ -21,11 +33,11 @@ html {
 }
 
 #books-see-all:hover {
-  color: #ff7777;
+  color: var(--clr-primary);
 }
 
 #books-see-all:hover svg {
-  fill: #ff7777;
+  fill: var(--clr-primary);
 }
 
 .portfolio-category-btn {
@@ -37,6 +49,6 @@ html {
 }
 
 .portfolio-category-btn.active {
-  background-color: #ff7777;
+  background-color: var(--clr-primary);
   color: white;
 }

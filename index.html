@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./imgs/favicon.png" />
     <title>사단법인 행복한가정문화원</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./css/custom.css" />
     <script defer src="./js/main.js"></script>
   </head>
@@ -36,14 +36,24 @@
               alt="행복한가정문화원 로고"
           /></a>
           <div id="nav-desktop" class="hidden lg:block">
-            <a href="./about.html" class="hover:text-primary">문화원 소개</a>
-            <a href="./publishing.html" class="ml-6 hover:text-primary"
+            <a href="./about.html" class="transition-colors hover:text-primary"
+              >문화원 소개</a
+            >
+            <a
+              href="./publishing.html"
+              class="ml-6 transition-colors hover:text-primary"
               >도서출판 행복</a
             >
-            <a href="./happy-edu.html" class="ml-6 hover:text-primary"
+            <a
+              href="./happy-edu.html"
+              class="ml-6 transition-colors hover:text-primary"
               >평생교육원</a
             >
-            <a href="./contact.html" class="ml-6 hover:text-primary">문의</a>
+            <a
+              href="./contact.html"
+              class="ml-6 transition-colors hover:text-primary"
+              >문의</a
+            >
           </div>
           <img
             id="mobile-nav-open"
@@ -163,7 +173,7 @@
       MAIN
     ######################-->
     <main>
-      <!--%%%%%%%%%%%%%%%
+      <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       What we do section  -->
       <section class="px-4 mb-36 container mx-auto max-w-screen-xl">
         <div class="section-title flex items-center justify-center mb-8">
@@ -245,7 +255,135 @@
         </div>
       </section>
 
-      <!-- %%%%%%%%%%%%%%%%%
+      <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      Shortcut menu section  -->
+      <section class="px-4 mb-36 container mx-auto max-w-screen-xl">
+        <div class="section-title flex items-center justify-center mb-8">
+          <div class="w-10 h-px bg-gray-300"></div>
+          <h1 class="font-bold text-xl mx-6">바로가기</h1>
+          <div class="w-10 h-px bg-gray-300"></div>
+        </div>
+
+        <!-- shortcut buttons grid -->
+        <div
+          class="
+            container
+            w-full
+            mx-auto
+            max-w-7xl
+            grid grid-cols-3
+            gap-2
+            text-sm text-gray-500
+            lg:grid-cols-6
+          "
+        >
+          <a href="#"
+            ><div
+              class="
+                flex
+                justify-center
+                items-center
+                h-20
+                bg-gray-100
+                rounded-md
+                transition-colors
+                hover:bg-green-200 hover:text-gray-600
+              "
+            >
+              월간 행복한가정
+            </div></a
+          >
+
+          <a href="#"
+            ><div
+              class="
+                flex
+                justify-center
+                items-center
+                h-20
+                bg-gray-100
+                rounded-md
+                transition-colors
+                hover:bg-yellow-200 hover:text-gray-600
+              "
+            >
+              행복한가정 <br />소책자
+            </div></a
+          >
+
+          <a href="#"
+            ><div
+              class="
+                flex
+                justify-center
+                items-center
+                h-20
+                bg-gray-100
+                rounded-md
+                transition-colors
+                hover:bg-blue-200 hover:text-gray-600
+              "
+            >
+              출판물
+            </div></a
+          >
+
+          <a href="#"
+            ><div
+              class="
+                flex
+                justify-center
+                items-center
+                h-20
+                bg-gray-100
+                rounded-md
+                transition-colors
+                hover:bg-green-300 hover:text-gray-600
+              "
+            >
+              지부현황
+            </div></a
+          >
+
+          <a href="#"
+            ><div
+              class="
+                flex
+                justify-center
+                items-center
+                h-20
+                bg-gray-100
+                rounded-md
+                transition-colors
+                hover:bg-pink-200 hover:text-gray-600
+              "
+            >
+              평생교육원<br />
+              프로그램
+            </div></a
+          >
+
+          <a href="./about.html#donation"
+            ><div
+              class="
+                flex
+                justify-center
+                items-center
+                h-20
+                text-xs
+                bg-gray-100
+                rounded-md
+                transition-colors
+                hover:bg-indigo-200 hover:text-gray-600
+              "
+            >
+              연간 기부금 모금액 <br />및 활용실적
+            </div></a
+          >
+        </div>
+      </section>
+
+      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         jibu section -->
       <section class="px-8 mb-48 container mx-auto max-w-screen-xl">
         <div class="section-title flex items-center justify-center mb-8">
