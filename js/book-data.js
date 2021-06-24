@@ -15,7 +15,8 @@ const books = [
     thumbnail: './imgs/books/book-gallary/23tree-tnail.png',
     title: '소나무처럼',
     author: '박순옥',
-    description: '',
+    description:
+      '1988년, 뇌종양으로 시한부 선고를 받았지만 신앙을 잃지 않고 기적적으로 30년 이상 생존하면서 써 온 시들을 모아 출간했다. 인생에 지친 사람들에게 위로를 주는 박순옥 권사의 시집.',
     contents: [],
   },
   {

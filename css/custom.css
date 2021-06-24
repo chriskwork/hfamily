@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#nav-mobile {
+  z-index: 9999;
+}
+
 /* about.html */
 #about-banner {
   background-image: url(../imgs/about/about.jpg);

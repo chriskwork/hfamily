@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./imgs/favicon.png" />
     <title>사단법인 행복한가정문화원</title>
-    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/custom.css" />
     <script defer src="./js/main.js"></script>
     <script defer src="./js/about.js"></script>
@@ -76,7 +76,8 @@
               top-0
               z-50
               transform
-              translate-x-full
+              scale-0
+              origin-top-right
               transition-transform
               lg:hidden
             "
@@ -114,9 +115,8 @@
     <!--banner image-->
     <div class="h-60 flex justify-center items-center mb-24" id="about-banner">
       <p class="text-sm w-3/4 lg:w-3/5">
-        사단법인 행복한가정문화원은 사회를 구성하는 기본 단위인 가정이 행복해야
-        사회가 행복해진다는 철학을 가지고<br />
-        행복한 가정, 행복한 사회를 만들기 위해 1999년에 설립된 기관입니다.
+        사단법인 행복한가정문화원은 더불어 함께 살아가는 아름다운 사회,
+        <br />행복한 가정을 만들고자 설립되었습니다.
       </p>
     </div>
 
@@ -397,10 +397,7 @@
                 src="./imgs/books/svgs/task_alt_black_24dp.svg"
                 alt=""
               />
-              <p>
-                원하시는 기관이나 단체에 후원천사 이름으로 월간 행복한가정을
-                보내드립니다.
-              </p>
+              <p>매월 또는 원하시는 기간마다 발행이 가능합니다.</p>
             </div>
             <div
               class="flex items-start mb-2 md:justify-center lg:justify-start"
@@ -410,7 +407,17 @@
                 src="./imgs/books/svgs/task_alt_black_24dp.svg"
                 alt=""
               />
-              <p>월간 행복한가정을 후원1004님 가정에 무료로 보내드립니다.</p>
+              <p>원하시는 제호를 사용하실 수 있습니다.</p>
+            </div>
+            <div
+              class="flex items-start mb-2 md:justify-center lg:justify-start"
+            >
+              <img
+                class="mr-1"
+                src="./imgs/books/svgs/task_alt_black_24dp.svg"
+                alt=""
+              />
+              <p>교회 또는 기관 이름과 주소를 넣어드립니다.</p>
             </div>
           </div>
         </div>
@@ -428,10 +435,7 @@
                 src="./imgs/books/svgs/task_alt_black_24dp.svg"
                 alt=""
               />
-              <p>
-                (사)행복한가정문화원에서 주관하는 프로그램 참여시 20% 할인
-                혜택을 드립니다.
-              </p>
+              <p>교회에서 야외전도시 이웃에게 배포하는 전도책자로 활용.</p>
             </div>
             <div
               class="flex items-start mb-2 md:justify-center lg:justify-start"
@@ -442,8 +446,8 @@
                 alt=""
               />
               <p>
-                (사)행복한가정문화원에서 발행하는 월간 행복한가정을
-                보내드립니다.
+                유동인구가 많은 곳에 홍보용으로 비치해 두고 누구나 가져갈 수
+                있도록 합니다.
               </p>
             </div>
             <div
@@ -454,24 +458,13 @@
                 src="./imgs/books/svgs/task_alt_black_24dp.svg"
                 alt=""
               />
-              <p>
-                도서출판 행복에서 발행하는 도서를 20% 할인된 가격에 구입하실 수
-                있습니다.
-              </p>
-            </div>
-            <div
-              class="flex items-start mb-2 md:justify-center lg:justify-start"
-            >
-              <img
-                class="mr-1"
-                src="./imgs/books/svgs/task_alt_black_24dp.svg"
-                alt=""
-              />
-              <p>도서출판 및 각종 인쇄물을 실비로 제작해 드립니다.</p>
+              <p>교회 내부 정기 발행물 형식으로 활용하실 수 있습니다.</p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- TODO: 소책자 스펙 디테일 & 상담, 파일 전송 시 주의사항 추가 -->
 
       <!-- 연혁 wrapper -->
       <div class="bg-white w-full px-8 py-24 mb-24">
