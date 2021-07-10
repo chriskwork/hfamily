@@ -10,6 +10,20 @@ html {
   --clr-primary: #ff7777;
 }
 
+/* index.html */
+.header-and-intro-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/landing/greenbg.svg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: top right;
+}
+
+#intro {
+  height: calc(100vh - 80px);
+}
+
 /* about.html */
 #about-banner {
   background-image: url(../imgs/about/about.jpg);
