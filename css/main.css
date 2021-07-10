@@ -724,8 +724,8 @@ img {
   max-height: 15rem;
 }
 
-.max-w-lg {
-  max-width: 32rem;
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .max-w-4xl {
@@ -856,16 +856,8 @@ img {
   padding-bottom: 6rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
 }
 
 .absolute {
@@ -1024,6 +1016,10 @@ img {
   width: 80%;
 }
 
+.w-3\/6 {
+  width: 50%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1044,8 +1040,8 @@ img {
   z-index: 50;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -1110,6 +1106,12 @@ img {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
@@ -1199,6 +1201,10 @@ img {
     justify-content: flex-start;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -1229,9 +1235,9 @@ img {
     padding-right: 0px;
   }
 
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:px-32 {
@@ -1241,10 +1247,6 @@ img {
 
   .lg\:pr-12 {
     padding-right: 3rem;
-  }
-
-  .lg\:pt-20 {
-    padding-top: 5rem;
   }
 
   .lg\:text-left {
@@ -1265,13 +1267,5 @@ img {
 
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1280px) {
-
-  .xl\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 }
