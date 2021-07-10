@@ -38,7 +38,7 @@ const header = document.querySelector('#header-wrap');
 const goTopBtn = document.querySelector('#goTopBtn');
 const options = {
   root: null,
-  threshold: 0,
+  threshold: 0.1,
   rootMargin: '-250px', // from header bottom -150px, isintersecting boolean changes its state
 };
 
