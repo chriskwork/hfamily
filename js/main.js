@@ -39,12 +39,12 @@ const goTopBtn = document.querySelector('#goTopBtn');
 const options = {
   root: null,
   threshold: 0,
-  rootMargin: '-250px', // from header bottom -150px, isintersecting boolean changes its state
+  rootMargin: '-100px', // from header bottom -150px, isintersecting boolean changes its state
 };
 
 const observer = new IntersectionObserver((entry, observer) => {
   const isIntersecting = entry[0].isIntersecting;
-
+  console.log(entry[0]);
   if (isIntersecting) {
     goTopBtn.style.opacity = 0;
     goTopBtn.style.pointerEvents = 'none';
