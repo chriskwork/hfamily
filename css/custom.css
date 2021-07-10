@@ -10,6 +10,56 @@ html {
   --clr-primary: #ff7777;
 }
 
+#goTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.95rem;
+  background-color: var(--clr-primary);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* index.html */
+.header-and-intro-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/landing/greenbg.svg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: top right;
+}
+
+#intro {
+  height: calc(100vh - 80px);
+}
+
+@media screen and (min-width: 768px) {
+  .header-and-intro-wrapper {
+    background-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-and-intro-wrapper {
+    background-size: 80%;
+  }
+
+  #intro {
+    margin-top: -80px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .header-and-intro-wrapper {
+    background-size: 70%;
+  }
+}
+
 /* about.html */
 #about-banner {
   background-image: url(../imgs/about/about.jpg);

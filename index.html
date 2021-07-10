@@ -10,163 +10,177 @@
     <link rel="stylesheet" href="./css/custom.css" />
     <script defer src="./js/main.js"></script>
   </head>
-  <body class="relative">
+  <body class="relative" id="top">
     <!--##################
       HEADER
     ######################-->
-    <div class="header-wrapper sticky top-0 bg-gray-50">
-      <header
-        id="header"
+    <div id="header-wrap" class="header-and-intro-wrapper mb-36 lg:mb-0">
+      <div class="header-wrapper">
+        <header
+          id="header"
+          class="
+            flex
+            justify-center
+            items-center
+            px-8
+            container
+            mx-auto
+            max-w-screen-xl
+          "
+        >
+          <nav class="flex justify-between items-center w-full h-20">
+            <a href="./index.html"
+              ><img
+                id="logo"
+                class="w-12"
+                src="./imgs/hfam-logo.png"
+                alt="행복한가정문화원 로고"
+            /></a>
+            <div id="nav-desktop" class="hidden lg:block">
+              <a
+                href="./about.html"
+                class="transition-colors hover:text-primary"
+                >문화원 소개</a
+              >
+              <a
+                href="./publishing.html"
+                class="ml-6 transition-colors hover:text-primary"
+                >도서출판 행복</a
+              >
+              <a
+                href="./happy-edu.html"
+                class="ml-6 transition-colors hover:text-primary"
+                >평생교육원</a
+              >
+              <a
+                href="./contact.html"
+                class="ml-6 transition-colors hover:text-primary"
+                >문의</a
+              >
+            </div>
+            <img
+              id="mobile-nav-open"
+              src="./imgs/header/menu.svg"
+              alt="mobile hamberger menu"
+              class="cursor-pointer w-7 lg:hidden"
+            />
+
+            <!-- mobile nav drawer -->
+            <!--when mobile menu opened, black background shows up-->
+            <div
+              id="black-cover"
+              class="
+                absolute
+                top-0
+                left-0
+                bg-black
+                opacity-70
+                w-screen
+                h-screen
+                hidden
+              "
+            ></div>
+            <div
+              id="nav-mobile"
+              class="
+                absolute
+                right-0
+                top-0
+                transform
+                scale-0
+                origin-top-right
+                transition-transform
+                lg:hidden
+              "
+            >
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  justify-start
+                  items-center
+                  bg-white
+                  w-80
+                  h-screen
+                  pt-20
+                  shadow-lg
+                  md:w-96
+                "
+              >
+                <img
+                  id="mobile-nav-close"
+                  src="./imgs/header/close.svg"
+                  alt="닫기 버튼"
+                  class="absolute top-8 right-8 cursor-pointer"
+                />
+                <a href="./about.html" class="w-full py-8">문화원 소개</a>
+                <a href="./publishing.html" class="w-full py-8"
+                  >도서출판 행복</a
+                >
+                <a href="./happy-edu.html" class="w-full py-8">평생교육원</a>
+                <a href="./contact.html" class="w-full py-8">문의</a>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+      <!-- Landing - intro -->
+      <div
+        id="intro"
         class="
+          header-intro-wrapper
           flex
           justify-center
           items-center
-          px-8
           container
           mx-auto
-          max-w-screen-xl
         "
       >
-        <nav class="flex justify-between items-center w-full h-20">
-          <a href="./index.html"
-            ><img
-              id="logo"
-              class="w-12"
-              src="./imgs/hfam-logo.png"
-              alt="행복한가정문화원 로고"
-          /></a>
-          <div id="nav-desktop" class="hidden lg:block">
-            <a href="./about.html" class="transition-colors hover:text-primary"
+        <div
+          class="
+            lg:flex
+            lg:flex-row-reverse
+            lg:justify-center
+            lg:items-center
+            lg:px-8
+          "
+        >
+          <div class="lg:w-full">
+            <img
+              class="mx-auto max-w-xs w-3/6 lg:w-full"
+              src="./imgs/landing/familyhug.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="intro-text lg:text-left">
+            <p class="text-4xl mb-4 font-bold leading-snug">
+              소중한 가정을 <br />아름답게 꽃피우는 정원사
+            </p>
+            <p class="text-gray-400 px-7 lg:px-0 lg:pr-12">
+              사단법인 행복한가정문화원은 사회를 구성하는 기본 단위인 가정이
+              행복해야 사회가 행복해진다는 철학을 가지고 행복한 가정, 행복한
+              사회를 만들기 위해 1999년에 설립된 기관입니다.
+            </p>
+            <br /><br /><br />
+            <a
+              href="./about.html"
+              class="
+                btn-primary
+                bg-primary
+                text-white
+                px-12
+                py-4
+                rounded-full
+                hover:opacity-90
+                transition-colors
+                duration-200
+              "
               >문화원 소개</a
             >
-            <a
-              href="./publishing.html"
-              class="ml-6 transition-colors hover:text-primary"
-              >도서출판 행복</a
-            >
-            <a
-              href="./happy-edu.html"
-              class="ml-6 transition-colors hover:text-primary"
-              >평생교육원</a
-            >
-            <a
-              href="./contact.html"
-              class="ml-6 transition-colors hover:text-primary"
-              >문의</a
-            >
           </div>
-          <img
-            id="mobile-nav-open"
-            src="./imgs/header/menu.svg"
-            alt="mobile hamberger menu"
-            class="cursor-pointer w-7 lg:hidden"
-          />
-
-          <!-- mobile nav drawer -->
-          <!--when mobile menu opened, black background shows up-->
-          <div
-            id="black-cover"
-            class="
-              absolute
-              top-0
-              left-0
-              bg-black
-              opacity-70
-              w-screen
-              h-screen
-              hidden
-            "
-          ></div>
-          <div
-            id="nav-mobile"
-            class="
-              absolute
-              right-0
-              top-0
-              transform
-              scale-0
-              origin-top-right
-              transition-transform
-              lg:hidden
-            "
-          >
-            <div
-              class="
-                relative
-                flex flex-col
-                justify-start
-                items-center
-                bg-white
-                w-80
-                h-screen
-                pt-20
-                shadow-lg
-                md:w-96
-              "
-            >
-              <img
-                id="mobile-nav-close"
-                src="./imgs/header/close.svg"
-                alt="닫기 버튼"
-                class="absolute top-8 right-8 cursor-pointer"
-              />
-              <a href="./about.html" class="w-full py-8">문화원 소개</a>
-              <a href="./publishing.html" class="w-full py-8">도서출판 행복</a>
-              <a href="./happy-edu.html" class="w-full py-8">평생교육원</a>
-              <a href="./contact.html" class="w-full py-8">문의</a>
-            </div>
-          </div>
-        </nav>
-      </header>
-    </div>
-
-    <!-- Landing - intro -->
-    <div
-      id="intro"
-      class="
-        container
-        px-8
-        mx-auto
-        flex flex-col
-        justify-center
-        items-center
-        pt-6
-        pb-32
-        max-w-screen-xl
-        lg:px-16 lg:flex-row-reverse lg:pt-20
-        xl:px-24
-      "
-    >
-      <img
-        src="./imgs/landing/intro-image.svg"
-        alt="Family illustration"
-        class="max-w-lg"
-      />
-      <div class="intro-text lg:text-left">
-        <p class="text-4xl mb-4 font-bold leading-snug">
-          소중한 가정을 <br />아름답게 꽃피우는 정원사
-        </p>
-        <p class="text-gray-400 px-7 lg:px-0 lg:pr-12">
-          사단법인 행복한가정문화원은 사회를 구성하는 기본 단위인 가정이
-          행복해야 사회가 행복해진다는 철학을 가지고 행복한 가정, 행복한 사회를
-          만들기 위해 1999년에 설립된 기관입니다.
-        </p>
-        <br /><br /><br />
-        <a
-          href="./about.html"
-          class="
-            btn-primary
-            bg-primary
-            text-white
-            px-12
-            py-4
-            rounded-full
-            hover:opacity-90
-            transition-colors
-            duration-200
-          "
-          >문화원 소개</a
-        >
+        </div>
       </div>
     </div>
 
@@ -520,5 +534,12 @@
         </div>
       </div>
     </footer>
+
+    <!-- go to top button -->
+    <div id="goTopBtn" class="">
+      <a href="#top">
+        <img src="./imgs/chevrons-up.svg" alt="" />
+      </a>
+    </div>
   </body>
 </html>
