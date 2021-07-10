@@ -17,11 +17,15 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.95rem;
   background-color: var(--clr-primary);
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.5s;
+  overflow: hidden;
+}
+
+#goTopBtn a {
+  padding: 0.95rem;
 }
 
 /* index.html */
