@@ -15,7 +15,6 @@ const introText = anime({
   easing: 'linear',
   duration: 500,
   delay: (el, i) => {
-    console.log(i * 500);
     return i * 500;
   },
   opacity: [0, 1],

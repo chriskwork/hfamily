@@ -90,6 +90,10 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 Add the correct font weight in Edge and Safari.
 */
 
+b {
+  font-weight: bolder;
+}
+
 /**
 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 2. Correct the odd 'em' font sizing in all browsers.
@@ -144,7 +148,8 @@ Correct the inability to style clickable types in iOS and Safari.
 */
 
 button,
-[type='button'] {
+[type='button'],
+[type='reset'] {
   -webkit-appearance: button;
 }
 
@@ -168,6 +173,10 @@ Remove the padding so developers are not caught out when they zero out 'fieldset
 /**
 Add the correct vertical alignment in Chrome and Firefox.
 */
+
+progress {
+  vertical-align: baseline;
+}
 
 /**
 Correct the cursor style of increment and decrement buttons in Safari.
@@ -366,7 +375,8 @@ button {
  */
 
 img,
-svg {
+svg,
+object {
   display: block;
   vertical-align: middle;
 }
