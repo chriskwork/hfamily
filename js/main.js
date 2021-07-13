@@ -44,7 +44,7 @@ const options = {
 
 const observer = new IntersectionObserver((entry, observer) => {
   const isIntersecting = entry[0].isIntersecting;
-  console.log(entry[0]);
+
   if (isIntersecting) {
     goTopBtn.style.opacity = 0;
     goTopBtn.style.pointerEvents = 'none';
