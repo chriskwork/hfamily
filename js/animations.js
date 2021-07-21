@@ -1,5 +1,3 @@
-console.log('animation');
-
 // INDEX PAGE
 const introImg = anime({
   targets: document.querySelector('#introImg'),
