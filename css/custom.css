@@ -74,6 +74,7 @@ body {
 
 .custom-see-donation-docu svg {
   transition: all 150ms;
+  margin: 0 auto;
 }
 
 .custom-see-donation-docu svg:hover {
