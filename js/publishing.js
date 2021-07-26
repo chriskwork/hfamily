@@ -23,12 +23,16 @@ if (bookGallary) {
         <div class="mb-4">
           <img
             src=${books[i].thumbnail}
-            alt=""
+            alt="단행본 표지 썸네일"
             class="w-40 max-h-60"
           />
         </div>
         <div>
-          <h3 class="text-lg font-bold text-secondary mb-1">${books[i].title}</h3>
+          <h3 class="text-lg font-bold text-secondary mb-1">${
+            books[i].title.length > 19
+              ? books[i].title.slice(0, 20) + '...'
+              : books[i].title
+          }</h3>
           <p class="text-xs text-gray-400 mb-2">${books[i].author}</p>
           <p class="text-sm px-4">
           ${books[i].description}
@@ -42,19 +46,57 @@ if (bookGallary) {
 // ############# ETC, PORTFOLIO
 
 // data
-const leafletData = ['../imgs/about/mini-book/mini-1.jpg'];
-const posterData = [];
-const cardData = [];
+const leafletData = [
+  '../imgs/portfolio/didimdol17.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+];
+const posterData = [
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+];
+const cardData = [
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/default.jpg',
+];
 
+// img elements
 const images = document.querySelectorAll('.portfolio-img');
 
+// default category
+// function drawImages(category) {
+//   return images.forEach((img, i) => {
+//     img.setAttribute('src', category[i]);
+//     img.style.animation = `fadeIn ${i + 0.25}s`;
+//   });
+// }
+
 function drawImages(category) {
-  images.forEach((img) => {
-    img.setAttribute('src', `${category.map((item) => item)}`);
+  const wrapper = document.querySelector('.portfolio-imgs-wrapper');
+  wrapper.innerHTML = '';
+
+  return category.map((item, i) => {
+    wrapper.innerHTML += `
+    <div class="img-box w-full h-72 bg-gray-200 rounded-lg" style="animation: fadeIn ${
+      i + 0.15
+    }s">
+      <img class="portfolio-img" src="${item}" alt="시안 이미지" />
+    </div>
+    `;
   });
 }
 
-// default category
 drawImages(leafletData);
 
 // clicking category: change images on grid

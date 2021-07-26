@@ -124,3 +124,23 @@ body {
   background-color: var(--clr-primary);
   color: white;
 }
+
+.portfolio-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* animation: fadeIn 1s; */
+}
+
+.img-box {
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
