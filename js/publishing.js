@@ -1,18 +1,18 @@
-// ############# 단행본 데이터
+// ############# BOOKS DATA
 
-// 신간 new book
-const newTitle = document.querySelector('#new-book-title')
-const newAuthor = document.querySelector('#new-book-author')
-const newDescription = document.querySelector('#new-book-desc')
+// new book
+const newTitle = document.querySelector('#new-book-title');
+const newAuthor = document.querySelector('#new-book-author');
+const newDescription = document.querySelector('#new-book-desc');
 
 if (newTitle && newAuthor && newDescription) {
-  newTitle.textContent = books[0].title
-  newAuthor.textContent = books[0].author
-  newDescription.textContent = books[0].description
+  newTitle.textContent = books[0].title;
+  newAuthor.textContent = books[0].author;
+  newDescription.textContent = books[0].description;
 }
 
 // book gallary
-const bookGallary = document.querySelector('#book-gallary')
+const bookGallary = document.querySelector('#book-gallary');
 
 if (bookGallary) {
   for (let i = 1; i < 4; i++) {
@@ -35,11 +35,54 @@ if (bookGallary) {
           </p>
         </div>
       </div>
-    `
+    `;
   }
 }
-// ############# 기타 인쇄 - 포트폴리오
 
-const leafletData = []
-const posterData = []
-const cardData = []
+// ############# ETC, PORTFOLIO
+
+// data
+const leafletData = ['../imgs/about/mini-book/mini-1.jpg'];
+const posterData = [];
+const cardData = [];
+
+const images = document.querySelectorAll('.portfolio-img');
+
+function drawImages(category) {
+  images.forEach((img) => {
+    img.setAttribute('src', `${category.map((item) => item)}`);
+  });
+}
+
+// default category
+drawImages(leafletData);
+
+// clicking category: change images on grid
+const categoryContainer = document.querySelector('#portfolio-category');
+
+categoryContainer.addEventListener('click', (e) => {
+  const category = e.target.getAttribute('data-category');
+  const categoryBtns = document.querySelectorAll('.portfolio-category-btn');
+
+  function removeActiveClass() {
+    categoryBtns.forEach((btn) => btn.classList.remove('active'));
+    e.target.classList.add('active');
+  }
+
+  if (category != null) {
+    if (category === 'leaflet') {
+      removeActiveClass();
+      drawImages(leafletData);
+    }
+    if (category === 'poster') {
+      removeActiveClass();
+      drawImages(posterData);
+    }
+    if (category === 'card') {
+      removeActiveClass();
+      drawImages(cardData);
+    }
+  } else {
+    return;
+  }
+});
