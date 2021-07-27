@@ -48,7 +48,7 @@ if (bookGallary) {
 // data
 const leafletData = [
   '../imgs/portfolio/didimdol17.jpg',
-  '../imgs/portfolio/default.jpg',
+  '../imgs/portfolio/nanum10.jpg',
   '../imgs/portfolio/default.jpg',
   '../imgs/portfolio/default.jpg',
   '../imgs/portfolio/default.jpg',
