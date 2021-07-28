@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./imgs/favicon.png" />
     <title>사단법인 행복한가정문화원</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./css/custom.css" />
   </head>
   <body class="relative overflow-x-hidden">
@@ -16,16 +16,7 @@
     <div class="header-wrapper sticky top-0 bg-gray-50">
       <header
         id="header"
-        class="
-          flex
-          justify-center
-          items-center
-          px-8
-          container
-          mx-auto
-          max-w-screen-xl
-          z-30
-        "
+        class="flex justify-center items-center px-8 container mx-auto max-w-screen-xl z-30"
       >
         <nav class="flex justify-between items-center w-full h-20">
           <a href="./index.html"
@@ -64,45 +55,14 @@
           <!--when mobile menu opened, black background shows up-->
           <div
             id="black-cover"
-            class="
-              absolute
-              top-0
-              left-0
-              bg-black
-              opacity-70
-              w-screen
-              h-screen
-              hidden
-              z-40
-            "
+            class="absolute top-0 left-0 bg-black opacity-70 w-screen h-screen hidden z-40"
           ></div>
           <div
             id="nav-mobile"
-            class="
-              absolute
-              right-0
-              top-0
-              z-50
-              transform
-              scale-0
-              origin-top-right
-              transition-transform
-              lg:hidden
-            "
+            class="absolute right-0 top-0 z-50 transform scale-0 origin-top-right transition-transform lg:hidden"
           >
             <div
-              class="
-                relative
-                flex flex-col
-                justify-start
-                items-center
-                bg-white
-                w-80
-                h-screen
-                pt-20
-                shadow-lg
-                md:w-96
-              "
+              class="relative flex flex-col justify-start items-center bg-white w-80 h-screen pt-20 shadow-lg md:w-96"
             >
               <img
                 id="mobile-nav-close"
@@ -145,17 +105,7 @@
       <!-- 신간 -->
       <div class="new-book-wrapper container px-8 mb-16 mx-auto max-w-6xl">
         <div
-          class="
-            bg-white
-            rounded-lg
-            flex flex-col
-            justify-center
-            items-center
-            px-4
-            py-16
-            shadow-sm
-            lg:flex-row lg:px-32
-          "
+          class="bg-white rounded-lg flex flex-col justify-center items-center px-4 py-16 shadow-sm lg:flex-row lg:px-32"
         >
           <div class="w-4/5">
             <img
@@ -172,15 +122,7 @@
                 class="text-xl font-bold text-secondary"
               ></h2>
               <span
-                class="
-                  text-sm
-                  ml-2
-                  px-2
-                  py-1
-                  bg-red-500
-                  text-white
-                  rounded-full
-                "
+                class="text-sm ml-2 px-2 py-1 bg-red-500 text-white rounded-full"
                 >신간</span
               >
             </div>
@@ -198,17 +140,7 @@
       <a
         href="./all-books.html"
         id="books-see-all"
-        class="
-          flex
-          justify-end
-          items-center
-          mb-4
-          px-8
-          text-gray-600
-          cursor-pointer
-          max-w-6xl
-          mx-auto
-        "
+        class="flex justify-end items-center mb-4 px-8 text-gray-600 cursor-pointer max-w-6xl mx-auto"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -230,16 +162,7 @@
       <!-- 단행본 Grid -->
       <div
         id="book-gallary"
-        class="
-          container
-          px-8
-          grid grid-cols-1
-          gap-4
-          mb-36
-          mx-auto
-          max-w-6xl
-          lg:grid-cols-3
-        "
+        class="container px-8 grid grid-cols-1 gap-4 mb-36 mx-auto max-w-6xl lg:grid-cols-3"
       >
         <!-- cards -->
         <!-- <div
@@ -275,16 +198,7 @@
         <!-- 포트폴리오 Grid -->
         <div
           id="portfolio-category"
-          class="
-            flex
-            justify-evenly
-            items-center
-            max-w-4xl
-            mx-auto
-            mb-6
-            px-8
-            text-sm
-          "
+          class="flex justify-evenly items-center max-w-4xl mx-auto mb-6 px-8 text-sm"
         >
           <button
             class="portfolio-category-btn rounded-lg px-4 py-2 active"
@@ -307,51 +221,15 @@
         </div>
 
         <div
-          class="
-            portfolio-imgs-wrapper
-            container
-            px-8
-            grid grid-cols-1
-            gap-4
-            mb-24
-            max-w-6xl
-            mx-auto
-            md:grid-cols-2
-            lg:grid-cols-3
-          "
+          class="portfolio-imgs-wrapper container px-8 grid grid-cols-1 gap-4 mb-24 max-w-6xl mx-auto md:grid-cols-2 lg:grid-cols-3"
         >
-          <!-- <div class="img-box w-full h-72 bg-gray-200 rounded-lg">
-            <img class="portfolio-img" src="" alt="시안 이미지" />
-          </div>
-          <div class="img-box w-full h-72 bg-gray-200 rounded-lg">
-            <img class="portfolio-img" src="" alt="시안 이미지" />
-          </div>
-          <div class="img-box w-full h-72 bg-gray-200 rounded-lg">
-            <img class="portfolio-img" src="" alt="시안 이미지" />
-          </div>
-          <div class="img-box w-full h-72 bg-gray-200 rounded-lg">
-            <img class="portfolio-img" src="" alt="시안 이미지" />
-          </div>
-          <div class="img-box w-full h-72 bg-gray-200 rounded-lg">
-            <img class="portfolio-img" src="" alt="시안 이미지" />
-          </div>
-          <div class="img-box w-full h-72 bg-gray-200 rounded-lg">
-            <img class="portfolio-img" src="" alt="시안 이미지" />
-          </div> -->
+          <!-- 포트폴리오 이미지 6개 here -->
         </div>
         <!-- 포트폴리오 Grid ends-->
 
         <!-- 구입 문의 배너 -->
         <div
-          class="
-            w-screen
-            bg-secondary
-            text-white
-            flex
-            justify-center
-            items-center
-            py-16
-          "
+          class="w-screen bg-secondary text-white flex justify-center items-center py-16"
         >
           <p class="text-2xl font-bold leading-normal">
             도서 구입 / 인쇄물 제작 문의 <br />02-825-0675
@@ -366,14 +244,7 @@
     <footer class="bg-gray-700 text-gray-300 px-4 py-8 lg:h-40">
       <!-- content wrapper -->
       <div
-        class="
-          px-4
-          container
-          mx-auto
-          max-w-screen-xl
-          h-full
-          lg:flex lg:justify-between lg:items-center
-        "
+        class="px-4 container mx-auto max-w-screen-xl h-full lg:flex lg:justify-between lg:items-center"
       >
         <div class="flex justify-center items-center mb-2">
           <img

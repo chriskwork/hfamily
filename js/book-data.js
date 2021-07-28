@@ -2,7 +2,7 @@ const books = [
   {
     id: 24,
     img: '../imgs/happy-books/book-gallary/24lovejesus.jpg',
-    thumbnail: './imgs/books/book-gallary/24lovejesus-tnail.jpg',
+    thumbnail: './imgs/books/book-gallary/24lovejesus-tnail.png',
     title: '예수님과 사랑에 빠져라',
     author: '김일로',
     description:
@@ -408,4 +408,4 @@ const books = [
       },
     ],
   },
-]
+];

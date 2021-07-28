@@ -5,127 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>사단법인 행복한가정문화원</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../../css/custom.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
   </head>
-  <body class="relative overflow-x-hidden">
+  <body class="overflow-x-hidden relative">
     <!--##################
-      HEADER
+      CHECK HEADER
     ######################-->
-    <header
-      id="header"
-      class="
-        flex
-        justify-center
-        items-center
-        px-8
-        container
-        mx-auto
-        max-w-screen-xl
-        sticky
-        top-0
-        bg-gray-50
-      "
-    >
-      <nav class="flex justify-between items-center w-full h-20">
-        <a href="../../index.html"
-          ><img
-            id="logo"
-            class="w-12"
-            src="../../imgs/hfam-logo.png"
-            alt="행복한가정문화원 로고"
-        /></a>
-        <div id="nav-desktop" class="hidden lg:block">
-          <a href="./about.html" class="text-primary">문화원 소개</a>
-          <a href="./publishing.html" class="ml-6 hover:text-primary"
-            >도서출판 행복</a
-          >
-          <a href="./happy-edu.html" class="ml-6 hover:text-primary"
-            >평생교육원</a
-          >
-          <a href="./contact.html" class="ml-6 hover:text-primary">문의</a>
-        </div>
-        <img
-          id="mobile-nav-open"
-          src="../../imgs/header/menu.svg"
-          alt="mobile hamberger menu"
-          class="cursor-pointer w-7 lg:hidden"
-        />
-
-        <!-- mobile nav drawer -->
-        <!--when mobile menu opened, black background shows up-->
-        <div
-          id="black-cover"
-          class="
-            absolute
-            top-0
-            left-0
-            bg-black
-            opacity-70
-            w-screen
-            h-screen
-            hidden
-          "
-        ></div>
-        <div
-          id="nav-mobile"
-          class="
-            absolute
-            right-0
-            top-0
-            z-50
-            transform
-            translate-x-full
-            transition-transform
-            lg:hidden
-          "
-        >
-          <div
-            class="
-              relative
-              flex flex-col
-              justify-start
-              items-center
-              bg-white
-              w-80
-              h-screen
-              pt-20
-              shadow-lg
-              md:w-96
-            "
-          >
-            <img
-              id="mobile-nav-close"
-              src="../../imgs/header/close.svg"
-              alt="닫기 버튼"
-              class="absolute top-8 right-8 cursor-pointer"
-            />
-            <a href="./about.html" class="w-full py-8">문화원 소개</a>
-            <a href="./publishing.html" class="w-full py-8">도서출판 행복</a>
-            <a href="./happy-edu.html" class="w-full py-8">평생교육원</a>
-            <a href="./contact.html" class="w-full py-8">문의</a>
+    <div class="header-wrapper sticky top-0 bg-gray-50">
+      <header
+        id="header"
+        class="flex justify-center items-center px-8 container mx-auto max-w-screen-xl z-30"
+      >
+        <nav class="flex justify-between items-center w-full h-20">
+          <a href="./index.html"
+            ><img
+              id="logo"
+              class="w-12"
+              src="./imgs/hfam-logo.png"
+              alt="행복한가정문화원 로고"
+          /></a>
+          <div id="nav-desktop" class="hidden lg:block">
+            <a href="./about.html" class="transition-colors hover:text-primary"
+              >문화원 소개</a
+            >
+            <a
+              href="./publishing.html"
+              class="ml-6 transition-colors hover:text-primary"
+              >도서출판 행복</a
+            >
+            <a
+              href="./happy-edu.html"
+              class="ml-6 transition-colors hover:text-primary"
+              >평생교육원</a
+            >
+            <a
+              href="./contact.html"
+              class="ml-6 transition-colors hover:text-primary"
+              >문의</a
+            >
           </div>
-        </div>
-      </nav>
-    </header>
-    "준비중입니다."
+          <img
+            id="mobile-nav-open"
+            src="./imgs/header/menu.svg"
+            alt="mobile hamberger menu"
+            class="cursor-pointer w-7 lg:hidden"
+          />
+
+          <!-- mobile nav drawer -->
+          <!--when mobile menu opened, black background shows up-->
+          <div
+            id="black-cover"
+            class="absolute top-0 left-0 bg-black opacity-70 w-screen h-screen hidden z-40"
+          ></div>
+          <div
+            id="nav-mobile"
+            class="absolute right-0 top-0 z-50 transform scale-0 origin-top-right transition-transform lg:hidden"
+          >
+            <div
+              class="relative flex flex-col justify-start items-center bg-white w-80 h-screen pt-20 shadow-lg md:w-96"
+            >
+              <img
+                id="mobile-nav-close"
+                src="./imgs/header/close.svg"
+                alt="닫기 버튼"
+                class="absolute top-8 right-8 cursor-pointer"
+              />
+              <a href="./about.html" class="w-full py-8">문화원 소개</a>
+              <a href="./publishing.html" class="w-full py-8">도서출판 행복</a>
+              <a href="./happy-edu.html" class="w-full py-8">평생교육원</a>
+              <a href="./contact.html" class="w-full py-8">문의</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
 
     <!--#############################################################
-      FOOTER
+      CHECK main
+    ######################################################-->
+    <main>
+      <div
+        id="book-grid-wrapper"
+        class="container text-gray-400 px-8 pt-8 grid grid-cols-1 gap-4 mb-8 mx-auto max-w-6xl lg:grid-cols-3"
+      >
+        <!-- BOOK cards are here -->
+      </div>
+
+      <br /><br />
+      <button
+        class="mb-36 bg-primary text-white text-sm py-2 px-8 rounded hover:opacity-80 transition-opacity"
+        onclick="history.back()"
+      >
+        뒤로
+      </button>
+    </main>
+
+    <!-- ### 책 상세 보기 modal ### -->
+    <div
+      id="modal-container"
+      style="background: rgba(0, 0, 0, 0.8);"
+      class="fixed top-0 left-0 right-0 bottom-0 w-screen h-screen hidden justify-center items-center z-10 black-overlay"
+    >
+      <!-- black-overlay가 contains 되어있으면 모달 창 닫기 위해 -->
+      <!-- CHECK %%% inside content here %%% -->
+
+      <div
+        id="modal-content"
+        class="relative detail-info bg-gray-50 w-9/12 max-w-4xl h-5/6 rounded px-12 pt-24 pb-4 z-20 overflow-y-scroll"
+      >
+        <!-- %%% close button %%% -->
+        <div
+          class="absolute top-2 right-6 text-5xl text-gray-400 cursor-pointer"
+          onclick="closeModal()"
+        >
+          &times;
+        </div>
+
+        <!-- %%% content %%% -->
+        <!-- book info -->
+        <div
+          class="flex flex-col justify-start items-center text-center mb-12 lg:text-left lg:flex-row lg:items-start"
+        >
+          <div class="mb-4 lg:mr-6 shadow-lg">
+            <img id="detail-thumbnail-img" src="" alt="책 표지 이미지" />
+          </div>
+
+          <div>
+            <h1 id="detail-title" class="text-xl font-bold text-secondary">
+              <!-- ${book.title} -->
+            </h1>
+            <br />
+            <p id="detail-author" class="text-xs text-gray-400">
+              <!-- ${book.author} -->
+            </p>
+            <br />
+            <p id="detail-description">
+              <!-- ${book.description} -->
+            </p>
+          </div>
+        </div>
+        <!-- chapter list (contents) -->
+        <div>
+          <h2 class="text-secondary">목 차</h2>
+          <br />
+          <div id="detail-contents" class="text-gray-400">
+            <!-- ${book.contents} -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#############################################################
+      CHECK FOOTER
     ######################################################-->
     <footer class="bg-gray-700 text-gray-300 px-4 py-8 lg:h-40">
       <!-- content wrapper -->
       <div
-        class="
-          px-4
-          container
-          mx-auto
-          max-w-screen-xl
-          h-full
-          lg:flex
-          lg:justify-between
-          lg:items-center
-        "
+        class="px-4 container mx-auto max-w-screen-xl h-full lg:flex lg:justify-between lg:items-center"
       >
         <div class="flex justify-center items-center mb-2">
           <img
@@ -165,5 +202,5 @@
 
   <script src="../js/main.js"></script>
   <script src="../js/book-data.js"></script>
-  <script src="../js/publishing.js"></script>
+  <script src="../js/all-books.js"></script>
 </html>
