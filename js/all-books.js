@@ -3,6 +3,8 @@
 const allBooksContainer = document.querySelector('#book-grid-wrapper');
 
 if (allBooksContainer) {
+  allBooksContainer.innerHTML = '';
+
   books.forEach((book, i) => {
     allBooksContainer.innerHTML += `
   <div
@@ -45,6 +47,8 @@ if (allBooksContainer) {
   </div>
   `;
   });
+} else {
+  allBooksContainer.innerHTML = '';
 }
 
 /* Open modal window: 상세보기 button */
@@ -52,8 +56,15 @@ if (allBooksContainer) {
 const modalContainer = document.querySelector('#modal-container');
 const page = document.querySelector('body');
 
+// modal elements
+const modalThumbnail = modalContainer.querySelector('#detail-thumbnail-img');
+const modalTitle = modalContainer.querySelector('#detail-title');
+const modalAuthor = modalContainer.querySelector('#detail-author');
+const modalDesc = modalContainer.querySelector('#detail-description');
+const modalContent = modalContainer.querySelector('#detail-contents');
+
 function seeDetail(bookId) {
-  console.log('see detail is clicked', 'id is ' + bookId);
+  // console.log('see detail is clicked', 'id is ' + bookId);
 
   modalContainer.classList.remove('hidden');
   modalContainer.classList.add('flex');
@@ -61,7 +72,11 @@ function seeDetail(bookId) {
 
   books.forEach((book) => {
     if (book.id === bookId) {
-      console.log('correct!');
+      modalThumbnail.setAttribute('src', book.thumbnail);
+      modalTitle.textContent = book.title;
+      modalAuthor.textContent = book.author;
+      modalDesc.textContent = book.description;
+      modalContent.innerHTML = book.contents;
     } else {
       return;
     }
@@ -82,5 +97,4 @@ function closeModal() {
   modalContainer.classList.remove('flex');
   modalContainer.classList.add('hidden');
   page.style.overflow = 'auto';
-  modalContainer.innerHTML = '';
 }

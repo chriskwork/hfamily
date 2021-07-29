@@ -15,7 +15,16 @@
     <div class="header-wrapper sticky top-0 bg-gray-50">
       <header
         id="header"
-        class="flex justify-center items-center px-8 container mx-auto max-w-screen-xl z-30"
+        class="
+          flex
+          justify-center
+          items-center
+          px-8
+          container
+          mx-auto
+          max-w-screen-xl
+          z-30
+        "
       >
         <nav class="flex justify-between items-center w-full h-20">
           <a href="./index.html"
@@ -56,14 +65,45 @@
           <!--when mobile menu opened, black background shows up-->
           <div
             id="black-cover"
-            class="absolute top-0 left-0 bg-black opacity-70 w-screen h-screen hidden z-40"
+            class="
+              absolute
+              top-0
+              left-0
+              bg-black
+              opacity-70
+              w-screen
+              h-screen
+              hidden
+              z-40
+            "
           ></div>
           <div
             id="nav-mobile"
-            class="absolute right-0 top-0 z-50 transform scale-0 origin-top-right transition-transform lg:hidden"
+            class="
+              absolute
+              right-0
+              top-0
+              z-50
+              transform
+              scale-0
+              origin-top-right
+              transition-transform
+              lg:hidden
+            "
           >
             <div
-              class="relative flex flex-col justify-start items-center bg-white w-80 h-screen pt-20 shadow-lg md:w-96"
+              class="
+                relative
+                flex flex-col
+                justify-start
+                items-center
+                bg-white
+                w-80
+                h-screen
+                pt-20
+                shadow-lg
+                md:w-96
+              "
             >
               <img
                 id="mobile-nav-close"
@@ -87,14 +127,34 @@
     <main>
       <div
         id="book-grid-wrapper"
-        class="container text-gray-400 px-8 pt-8 grid grid-cols-1 gap-4 mb-8 mx-auto max-w-6xl lg:grid-cols-3"
+        class="
+          container
+          text-gray-400
+          px-8
+          pt-8
+          grid grid-cols-1
+          gap-4
+          mb-8
+          mx-auto
+          max-w-6xl
+          lg:grid-cols-3
+        "
       >
         <!-- BOOK cards are here -->
       </div>
 
       <br /><br />
       <button
-        class="mb-36 bg-primary text-white text-sm py-2 px-8 rounded hover:opacity-80 transition-opacity"
+        class="
+          mb-36
+          bg-primary
+          text-white text-sm
+          py-2
+          px-8
+          rounded
+          hover:opacity-80
+          transition-opacity
+        "
         onclick="history.back()"
       >
         뒤로
@@ -104,15 +164,41 @@
     <!-- ### 책 상세 보기 modal ### -->
     <div
       id="modal-container"
-      style="background: rgba(0, 0, 0, 0.8);"
-      class="fixed top-0 left-0 right-0 bottom-0 w-screen h-screen hidden justify-center items-center z-10 black-overlay"
+      style="background: rgba(0, 0, 0, 0.8)"
+      class="
+        fixed
+        top-0
+        left-0
+        right-0
+        bottom-0
+        w-screen
+        h-screen
+        hidden
+        justify-center
+        items-center
+        z-10
+        black-overlay
+      "
     >
       <!-- black-overlay가 contains 되어있으면 모달 창 닫기 위해 -->
       <!-- CHECK %%% inside content here %%% -->
 
       <div
         id="modal-content"
-        class="relative detail-info bg-gray-50 w-9/12 max-w-4xl h-5/6 rounded px-12 pt-24 pb-4 z-20 overflow-y-scroll"
+        class="
+          relative
+          detail-info
+          bg-gray-50
+          w-9/12
+          max-w-4xl
+          h-5/6
+          rounded
+          px-12
+          pt-24
+          pb-4
+          z-20
+          overflow-y-scroll
+        "
       >
         <!-- %%% close button %%% -->
         <div
@@ -125,10 +211,23 @@
         <!-- %%% content %%% -->
         <!-- book info -->
         <div
-          class="flex flex-col justify-start items-center text-center mb-12 lg:text-left lg:flex-row lg:items-start"
+          class="
+            flex flex-col
+            justify-start
+            items-center
+            text-center
+            mb-12
+            lg:text-left lg:flex-row lg:items-start
+          "
         >
           <div class="mb-4 lg:mr-6 shadow-lg">
-            <img id="detail-thumbnail-img" src="" alt="책 표지 이미지" />
+            <img
+              id="detail-thumbnail-img"
+              class="w-"
+              style="min-width: 200px"
+              src=""
+              alt="책 표지 이미지"
+            />
           </div>
 
           <div>
@@ -162,7 +261,14 @@
     <footer class="bg-gray-700 text-gray-300 px-4 py-8 lg:h-40">
       <!-- content wrapper -->
       <div
-        class="px-4 container mx-auto max-w-screen-xl h-full lg:flex lg:justify-between lg:items-center"
+        class="
+          px-4
+          container
+          mx-auto
+          max-w-screen-xl
+          h-full
+          lg:flex lg:justify-between lg:items-center
+        "
       >
         <div class="flex justify-center items-center mb-2">
           <img
